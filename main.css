@@ -980,7 +980,7 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#democratic-socialism {
+	#capitalism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
@@ -993,6 +993,7 @@ hr {
 		margin-top: -30px;
 	}
 }
+
 
 @media (min-width: 501px) {
 	#capitalism {
@@ -1043,7 +1044,7 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#democratic-socialism {
+	#communism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
@@ -1056,6 +1057,7 @@ hr {
 		margin-top: -30px;
 	}
 }
+
 
 @media (min-width: 501px) {
 	#communism {
@@ -1107,7 +1109,7 @@ hr {
 
 
 @media (max-width: 500px) {
-	#democratic-socialism {
+	#democracy {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
@@ -1120,6 +1122,7 @@ hr {
 		margin-top: -30px;
 	}
 }
+
 
 @media (min-width: 501px) {
 	#democracy {
@@ -1234,7 +1237,7 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#democratic-socialism {
+	#marxism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
@@ -1247,6 +1250,7 @@ hr {
 		margin-top: -30px;
 	}
 }
+
 
 @media (min-width: 501px) {
 	#marxism {
@@ -1297,7 +1301,7 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#democratic-socialism {
+	#public-property {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
@@ -1310,6 +1314,7 @@ hr {
 		margin-top: -30px;
 	}
 }
+
 
 @media (min-width: 501px) {
 	#public-property {
@@ -1360,7 +1365,7 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#democratic-socialism {
+	#private-property {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
@@ -1373,6 +1378,7 @@ hr {
 		margin-top: -30px;
 	}
 }
+
 
 @media (min-width: 501px) {
 	#private-property {
@@ -1423,7 +1429,7 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#democratic-socialism {
+	#socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
@@ -1436,6 +1442,7 @@ hr {
 		margin-top: -30px;
 	}
 }
+
 
 @media (min-width: 501px) {
 	#socialism {
