@@ -1167,6 +1167,7 @@ hr {
 		width: 90%;
 		padding-left: 0px;
 		margin-left: 0px;
+		padding-bottom: 100px;
 		position: fixed;
 		height: 60vh;
 		overflow: scroll;
