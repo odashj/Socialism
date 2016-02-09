@@ -267,7 +267,7 @@ hr {
 @media (min-width: 501px) {
 	#nav-content {
 		position: relative;
-		margin-top:10vh;
+		margin-top:60px;
 		overflow: scroll;
 		height: 90vh;
 	}
@@ -276,14 +276,20 @@ hr {
 @media (min-width: 1001px) {
 	#nav-content {
 		position: relative;
-		margin-top: -15vh;
+		margin-top: -14%;
 		overflow: scroll;
 		height: 90vh;
 	}
 }
 
-
-
+@media (min-width: 1600px) {
+		#nav-content {
+		position: relative;
+		margin-top: -15vh;
+		overflow: scroll;
+		height: 90vh;
+	}
+}
 
 
 @media (max-width: 1000px) {
@@ -501,7 +507,7 @@ hr {
 	margin-right: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	li.menu {
 		text-align: center;
 		font-size: 13px;
@@ -553,7 +559,7 @@ hr {
 	}
 }
 
-@media (min-width: 501px) {
+@media (min-width: 901px) {
 	li.menu {
 		text-align: center;
 		font-size: 15px;
@@ -629,14 +635,14 @@ hr {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	h2.nav-title{
 		text-align: center;
 		font-size: 22px;
 	}
 }
 
-@media (min-width: : 501px) {
+@media (min-width: : 901px) {
 	h2.nav-title{
 		text-align: center;
 		font-size: 36px;
