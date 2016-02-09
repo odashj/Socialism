@@ -40,9 +40,10 @@
 	</div>
 
 <!-- Mobile Glossary Links -->
+
 	<div class="dropdown">
-	  <button class="dropbtn">Glossary +</button>
-	  <div class="dropdown-content">
+	  <button  onclick="myFunction()" class="dropbtn" tabindex="0">Glossary <span style="font-size:13px">&#9660;</span></button>
+	  <div id="myDropdown" class="dropdown-content">
 	    <a href="javascript:HideAllShowOne('capitalism')">Capitalism</a>
 	    <a href="javascript:HideAllShowOne('communism')">Communism</a>
 	    <a href="javascript:HideAllShowOne('democracy')">Democracy</a>
@@ -169,6 +170,30 @@ document.getElementById(d).style.display = "block";
 function ReverseDisplay(d) {
 if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
 else { document.getElementById(d).style.display = "none"; }
+}
+
+
+// glossary dropdown
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 
 </script>
