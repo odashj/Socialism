@@ -1166,10 +1166,10 @@ hr {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 60px;
 		margin-left: 0px;
-		padding-bottom: 100px;
 		position: fixed;
-		height: 60vh;
+		height: 55vh;
 		overflow: scroll;
 		margin-top: -30px;
 	}
