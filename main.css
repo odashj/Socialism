@@ -980,13 +980,16 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#capitalism {
+	#democratic-socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 80px;
 		margin-left: 0px;
 		position: fixed;
-		height: auto;
+		height: 55vh;
+		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1040,13 +1043,16 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#communism {
+	#democratic-socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 80px;
 		margin-left: 0px;
 		position: fixed;
-		height: auto;
+		height: 55vh;
+		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1101,13 +1107,16 @@ hr {
 
 
 @media (max-width: 500px) {
-	#democracy {
+	#democratic-socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 80px;
 		margin-left: 0px;
 		position: fixed;
-		height: auto;
+		height: 55vh;
+		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1171,6 +1180,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1224,13 +1234,16 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#marxism {
+	#democratic-socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 80px;
 		margin-left: 0px;
 		position: fixed;
-		height: auto;
+		height: 55vh;
+		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1284,13 +1297,16 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#public-property {
+	#democratic-socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 80px;
 		margin-left: 0px;
 		position: fixed;
-		height: auto;
+		height: 55vh;
+		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1344,13 +1360,16 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#private-property {
+	#democratic-socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 80px;
 		margin-left: 0px;
 		position: fixed;
-		height: auto;
+		height: 55vh;
+		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1404,13 +1423,16 @@ hr {
 }
 
 @media (max-width: 500px) {
-	#socialism {
+	#democratic-socialism {
 		float: left;
 		width: 90%;
 		padding-left: 0px;
+		padding-bottom: 80px;
 		margin-left: 0px;
 		position: fixed;
-		height: auto;
+		height: 55vh;
+		overflow: scroll;
+		  -webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
