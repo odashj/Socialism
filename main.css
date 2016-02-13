@@ -860,11 +860,13 @@ hr {
 
 @media (max-width: 500px) {
 
+	@media (max-height: 600px) {
+
 		.dropbtn {
 	    background-color: #0082c9;
 	    color: #000;
 	    padding: 16px;
-	    font-size: 24px;
+	    font-size: 20px;
 		font-family: "europa",sans-serif;
 		font-style: normal;
 		font-weight: 700;
@@ -887,14 +889,14 @@ hr {
 	.dropdown {
 	    position: fixed;
 	    display: inline-block;
-	    top: 100px;
+	    top: 80px;
 		margin: auto;
 		z-index: 700;
 		width: 100%;
 		transition: all 150ms ease-in-out;
 	}
 
-	@media (max-height: 799px) {
+
 	/* Dropdown Content (Hidden by Default) */
 	.dropdown-content {
 	    display: none;
@@ -907,6 +909,7 @@ hr {
 		margin-top: -3px;
 		transition: all 150ms ease-in-out;
 	}
+
 
 	/* Links inside the dropdown */
 	.dropdown-content a {
@@ -920,43 +923,10 @@ hr {
 		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 3px;
-		line-height: 15px;
+		line-height: 12px;
 		text-align: center;
 		transition: all 150ms ease-in-out;
 	}
-}
-
-@media (min-height: 800px) {
-	/* Dropdown Content (Hidden by Default) */
-	.dropdown-content {
-	    display: none;
-	    position: absolute;
-	    background-color: #0082c9;
-		width: 83%;
-		margin-right: 7%;
-		margin-left: 7%;
-		padding-bottom: 10px;
-		margin-top: -3px;
-		transition: all 150ms ease-in-out;
-	}
-
-	/* Links inside the dropdown */
-	.dropdown-content a {
-	    color: black;
-	    padding: 12px 16px;
-	    text-decoration: none;
-	    display: block;
-	    font-size: 14px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		line-height: 20px;
-		text-align: center;
-		transition: all 150ms ease-in-out;
-	}
-}
 
 	.dropdown-content a.active {
 		color: #ffd400;
@@ -974,7 +944,93 @@ hr {
 	.show {
 		display:block;
 	}
+}
 
+	@media (min-height: 601px) {
+
+			.dropbtn {
+		    background-color: #0082c9;
+		    color: #000;
+		    padding: 16px;
+		    font-size: 24px;
+			font-family: "europa",sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			text-transform: capitalize;
+			letter-spacing: 2px;
+		    border: none;
+		    cursor: pointer;
+		    width: 83%;
+			margin-right: 7%;
+			margin-left: 7%;
+		}
+
+		/* Dropdown button on hover & focus */
+	.dropbtn:hover, .dropbtn:focus {
+	    background-color: #3e8e41;
+	    outline: none;
+	}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		    position: fixed;
+		    display: inline-block;
+		    top: 100px;
+			margin: auto;
+			z-index: 700;
+			width: 100%;
+			transition: all 150ms ease-in-out;
+		}
+
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #0082c9;
+			width: 83%;
+			margin-right: 7%;
+			margin-left: 7%;
+			padding-bottom: 10px;
+			margin-top: -3px;
+			transition: all 150ms ease-in-out;
+		}
+
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		    font-size: 14px;
+			font-family: "europa",sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			line-height: 20px;
+			text-align: center;
+			transition: all 150ms ease-in-out;
+		}
+
+		.dropdown-content a.active {
+			color: #ffd400;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {color: #ffd400}
+
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {
+		    background-color: #0082c9;
+		}
+
+		.show {
+			display:block;
+		}
+	}
 }
 
 @media (min-width: 501px) {
@@ -1022,11 +1078,23 @@ hr {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-height: 600px){
+	.d-column2 {
+		margin-top: 170px;
+	}
+}
+
+@media (min-height: 601px){
+	.d-column2 {
+		margin-top: 200px;
+	}
+}
+
+
+@media (max-width: 500px){
 	.d-column2 {
 		float: left;
 		width: 140px;
-		margin-top: 200px;
 		padding-right: 50px;
 		padding-left: 25px;
 		position: fixed;
