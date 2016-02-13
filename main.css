@@ -403,7 +403,7 @@ hr {
 }
 
 #nav-toggle.active span:before, #nav-toggle.active span:after {
-	  top: 0;
+	  top: 0px;
 }
 
 #nav-toggle.active span:before {
@@ -413,6 +413,8 @@ hr {
 #nav-toggle.active span:after {
  	 transform: rotate(-45deg);
 }
+
+
 
 @media (max-width: 500px) {
 	.logo {
@@ -889,6 +891,8 @@ hr {
 		z-index: 700;
 		width: 100%;
 		transition: all 150ms ease-in-out;
+		height: 100%;
+		overflow: scroll;
 	}
 
 	/* Dropdown Content (Hidden by Default) */
