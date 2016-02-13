@@ -521,6 +521,7 @@ hr {
 		letter-spacing: 3px;
 		line-height: 60px;
 		list-style: none;
+		color: #000;
 	}
 
 	li.menu a {
@@ -534,6 +535,7 @@ hr {
 		line-height: 60px;
 		list-style: none;
 		text-decoration: none;
+		color: #000;
 	}
 
 	li.first {
@@ -546,6 +548,7 @@ hr {
 		letter-spacing: 3px;
 		line-height: 60px;
 		list-style: none;
+		color: #000;
 	}
 
 	li.first a {
@@ -559,6 +562,7 @@ hr {
 		line-height: 60px;
 		list-style: none;
 		text-decoration: none;
+		color: #000;
 	}
 }
 
@@ -573,6 +577,7 @@ hr {
 		letter-spacing: 5px;
 		line-height: 60px;
 		list-style: none;
+		color: #000;
 	}
 
 	li.menu a {
@@ -586,6 +591,7 @@ hr {
 		line-height: 60px;
 		list-style: none;
 		text-decoration: none;
+		color: #000;
 	}
 
 	li.first {
@@ -598,6 +604,7 @@ hr {
 		letter-spacing: 5px;
 		line-height: 60px;
 		list-style: none;
+		color: #000;
 	}
 
 	li.first a {
@@ -611,6 +618,7 @@ hr {
 		line-height: 60px;
 		list-style: none;
 		text-decoration: none;
+		color: #000;
 	}
 }
 
@@ -748,6 +756,7 @@ hr {
 		letter-spacing: 5px;
 		line-height: 100px;
 		list-style: none;
+		color: #000;
 
 	}
 
@@ -762,6 +771,7 @@ hr {
 		line-height: 100px;
 		list-style: none;
 		text-decoration: none;
+		color: #000;
 	}
 
 
@@ -820,6 +830,7 @@ hr {
 		letter-spacing: 5px;
 		line-height: 100px;
 		list-style: none;
+		color: #000;
 	}
 
 	li.first a {
@@ -833,6 +844,7 @@ hr {
 		line-height: 100px;
 		list-style: none;
 		text-decoration: none;
+		color: #000;
 	}
 }
 
