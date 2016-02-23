@@ -1,5 +1,9 @@
+/*Boilerplate CSS*/
+
 body {
 	margin: auto;
+	 height: 2000px;    
+
 }
 
 h1 {
@@ -105,7 +109,7 @@ h1 a:hover {
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
 	h4 {
 		font-size: 14px;
 		font-family: "europa",sans-serif;
@@ -137,7 +141,7 @@ h1 a:hover {
 		letter-spacing: 3px;
 		color: #000;
 		text-decoration: none;
-	transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
 
 	}
 
@@ -182,7 +186,7 @@ h1 a:hover {
 		letter-spacing: 3px;
 		color: #000;
 		text-decoration: none;
-	transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
 
 	}
 
@@ -258,7 +262,7 @@ hr {
 		position: relative;
 		margin-top:60px;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 
 		height: 70vh;
 	}
@@ -274,26 +278,31 @@ hr {
 	}
 }
 
-@media (min-width: 1001px) {
+
+
+@media (min-width: 1250px) {
 	#nav-content {
-		position: relative;
-		margin-top: -14%;
+		position: fixed;
+		width: 90%;		
+		margin-left: 5%;
+		margin-right: 5%;
 		overflow: scroll;
-		height: 90vh;
+		height: 100%;
+		margin-top: -22%;
 	}
 }
 
 @media (min-width: 1600px) {
-		#nav-content {
+	#nav-content {
 		position: relative;
-		margin-top: -15vh;
+		margin-top: -17vh;
 		overflow: scroll;
 		height: 90vh;
 	}
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
 	#nav {
 		width: 100%;
 		height: 60px;
@@ -301,7 +310,7 @@ hr {
 		z-index: 1000;
 		position: fixed;
 		right: 0;
- 	 transition: height 150ms ease-in-out;
+		transition: height 150ms ease-in-out;
 
 	}
 
@@ -310,7 +319,7 @@ hr {
 	}
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1251px) {
 	#nav {
 		width: 60px;
 		height: 100%;
@@ -344,113 +353,141 @@ hr {
 		right: 50px;
 		top: 18px; 
 		position: fixed;
+
 	}
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1251px) {
 	#nav-toggle { 
 		position: relative; 
 		left: 13px; 
 		top: 30px; 
+		height: 100px;
+		width: auto;
+		display: block;
+	}
+}
+
+@media (min-width: 1600px) {
+	#nav-toggle { 
+		position: relative; 
+		left: 13px; 
+		top: 30px; 
+		height: 20px;
+		display: block;
 	}
 }
 
 #nav-toggle { 
 	cursor: pointer; 
 	padding: 10px 35px 16px 0px; 
+	display: block;
 }
 
 
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-	  cursor: pointer;
-	  border-radius: 1px;
-	  height: 4px;
-	  width: 30px;
-	  background: #000;
-	  position: absolute;
-	  display: block;
-	  content: '';
+	cursor: pointer;
+	border-radius: 1px;
+	height: 4px;
+	width: 30px;
+	background: #000;
+	position: absolute;
+	display: block;
+	content: '';
 }
 
 #nav-toggle:hover span, #nav-toggle:hover span:before, #nav-toggle:hover span:after {
-	  cursor: pointer;
-	  border-radius: 1px;
-	  height: 4px;
-	  width: 30px;
-	  background: #0082c9;
-	  position: absolute;
-	  display: block;
-	  content: '';
+	cursor: pointer;
+	border-radius: 1px;
+	height: 4px;
+	width: 30px;
+	background: #0082c9;
+	position: absolute;
+	display: block;
+	content: '';
 }
 
 
 #nav-toggle span:before {
-  	top: -10px; 
+	top: -10px; 
 }
 
 #nav-toggle span:after {
-  	bottom: -10px;
+	bottom: -10px;
 }
 
 
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
- 	 transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
 }
 
 #nav-toggle.active span {
- 	 background-color: transparent;
+	background-color: transparent;
 }
 
 #nav-toggle.active span:before, #nav-toggle.active span:after {
-	  top: 0px;
+	top: 0px;
 }
 
 #nav-toggle.active span:before {
- 	 transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 #nav-toggle.active span:after {
- 	 transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 
 
 @media (max-width: 500px) {
 	.logo {
-	    width: 190px;
-	    height: auto;
-	    position: fixed;
-	    margin-left: 20px;
-	    margin-right: auto;
-	    top: -20px;
-	    clear: both;
+		width: 190px;
+		height: auto;
+		position: fixed;
+		margin-left: 20px;
+		margin-right: auto;
+		top: -20px;
+		clear: both;
 	}
 }
 
 @media (min-width: 501px) {
 	.logo {
-	    width: 190px;
-	    height: auto;
-	    position: fixed;
-	    margin-left: 50px;
-	    margin-right: auto;
-	    top: -20px;
-	    clear: both;
+		width: 190px;
+		height: auto;
+		position: fixed;
+		margin-left: 50px;
+		margin-right: auto;
+		top: -20px;
+		clear: both;
 	}
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1251px) {
 	.logo {
 		-ms-transform: rotate(90deg); /* IE 9 */
-	    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-	    transform: rotate(90deg);
-	    width: 190px;
-	    height: auto;
-	    position: relative;
-	    left: -7em;
-	    top: 40vh;
+		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		transform: rotate(90deg);
+		width: 190px;
+		height: auto;
+		position: relative;
+		left: -7em;
+		top: 26vh;
+	}
+}
+
+@media (min-width: 1600px) {
+	.logo {
+		-ms-transform: rotate(90deg); /* IE 9 */
+		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		transform: rotate(90deg);
+		width: 190px;
+		height: auto;
+		position: relative;
+		left: -7em;
+		top: 38vh;
 	}
 }
 
@@ -472,31 +509,30 @@ hr {
 	}
 }
 
-@media (min-width: 1001px) {
-	@media (max-height: 1000px) {
+@media (min-width: 1251px) {
 		.about {
 			width: auto;
-		    height: auto;
-		    position: relative;
-		    left: 1.3em;
-		    top: 71vh;
-		    transition: all 150ms ease-in-out;
-		    cursor: pointer; 
+			height: auto;
+			position: relative;
+			left: 1.3em;
+			top: 55%;
+			transition: all 150ms ease-in-out;
+			cursor: pointer; 
 		}
 	}
 
-	@media (min-height: 1001px) {
+	@media (min-width: 1600px) {
 		.about {
 			width: auto;
-		    height: auto;
-		    position: relative;
-		    left: 1.3em;
-		    top: 82vh;
-		    transition: all 150ms ease-in-out;
-		    cursor: pointer; 
+			height: auto;
+			position: relative;
+			left: 1.3em;
+			top: 78%;
+			transition: all 150ms ease-in-out;
+			cursor: pointer; 
 		}
 	}
-}
+
 
 
 .nav-links {
@@ -624,7 +660,7 @@ hr {
 
 
 
-@media (max-height: 1000px) {
+@media (max-height: 1250px) {
 	h2.nav-title{
 		text-align: center;
 		font-size: 36px;
@@ -632,14 +668,14 @@ hr {
 }
 
 
-@media (min-height: 1001px) {
+@media (min-height: 1251px) {
 	h2.nav-title{
 		text-align: center;
 		font-size: 45px;
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
 	h2.nav-title{
 		text-align: center;
 		font-size: 34px;
@@ -661,13 +697,13 @@ hr {
 }
 
 
-	.nav-title{
-		width: 90%;
-	}
+.nav-title{
+	width: 90%;
+}
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
 	.menu {
 		width: 100%;
 		margin: auto;
@@ -695,7 +731,7 @@ hr {
 		background-color: #0082c9;
 	}
 
-		.first:hover{
+	.first:hover{
 		width: 100%;
 		margin: auto;
 		height: auto;
@@ -734,7 +770,7 @@ hr {
 		background-color: #0082c9;
 	}
 
-		.first:hover{
+	.first:hover{
 		width: 40%;
 		margin: auto;
 		height: auto;
@@ -875,119 +911,33 @@ hr {
 	@media (max-height: 600px) {
 
 		.dropbtn {
-	    background-color: #0082c9;
-	    color: #000;
-	    padding: 16px;
-	    font-size: 20px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		text-transform: capitalize;
-		letter-spacing: 2px;
-	    border: none;
-	    cursor: pointer;
-	    width: 83%;
-		margin-right: 7%;
-		margin-left: 7%;
-	}
-
-	/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-    outline: none;
-}
-
-	/* The container <div> - needed to position the dropdown content */
-	.dropdown {
-	    position: fixed;
-	    display: inline-block;
-	    top: 80px;
-		margin: auto;
-		z-index: 700;
-		width: 100%;
-		transition: all 150ms ease-in-out;
-	}
-
-
-	/* Dropdown Content (Hidden by Default) */
-	.dropdown-content {
-	    display: none;
-	    position: absolute;
-	    background-color: #0082c9;
-		width: 83%;
-		margin-right: 7%;
-		margin-left: 7%;
-		padding-bottom: 10px;
-		margin-top: -3px;
-		transition: all 150ms ease-in-out;
-	}
-
-
-	/* Links inside the dropdown */
-	.dropdown-content a {
-	    color: black;
-	    padding: 12px 16px;
-	    text-decoration: none;
-	    display: block;
-	    font-size: 12px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		line-height: 9px;
-		text-align: center;
-		transition: all 150ms ease-in-out;
-	}
-
-	.dropdown-content a.active {
-		color: #ffd400;
-	}
-
-	/* Change color of dropdown links on hover */
-	.dropdown-content a:hover {color: #ffd400}
-
-
-	/* Change the background color of the dropdown button when the dropdown content is shown */
-	.dropdown:hover .dropbtn {
-	    background-color: #0082c9;
-	}
-
-	.show {
-		display:block;
-	}
-}
-
-	@media (min-height: 601px) {
-
-			.dropbtn {
-		    background-color: #0082c9;
-		    color: #000;
-		    padding: 16px;
-		    font-size: 24px;
+			background-color: #0082c9;
+			color: #000;
+			padding: 16px;
+			font-size: 20px;
 			font-family: "europa",sans-serif;
 			font-style: normal;
 			font-weight: 700;
 			text-transform: capitalize;
 			letter-spacing: 2px;
-		    border: none;
-		    cursor: pointer;
-		    width: 83%;
+			border: none;
+			cursor: pointer;
+			width: 83%;
 			margin-right: 7%;
 			margin-left: 7%;
 		}
 
 		/* Dropdown button on hover & focus */
-	.dropbtn:hover, .dropbtn:focus {
-	    background-color: #3e8e41;
-	    outline: none;
-	}
+		.dropbtn:hover, .dropbtn:focus {
+			background-color: #3e8e41;
+			outline: none;
+		}
 
 		/* The container <div> - needed to position the dropdown content */
 		.dropdown {
-		    position: fixed;
-		    display: inline-block;
-		    top: 100px;
+			position: fixed;
+			display: inline-block;
+			top: 80px;
 			margin: auto;
 			z-index: 700;
 			width: 100%;
@@ -997,9 +947,9 @@ hr {
 
 		/* Dropdown Content (Hidden by Default) */
 		.dropdown-content {
-		    display: none;
-		    position: absolute;
-		    background-color: #0082c9;
+			display: none;
+			position: absolute;
+			background-color: #0082c9;
 			width: 83%;
 			margin-right: 7%;
 			margin-left: 7%;
@@ -1011,11 +961,97 @@ hr {
 
 		/* Links inside the dropdown */
 		.dropdown-content a {
-		    color: black;
-		    padding: 12px 16px;
-		    text-decoration: none;
-		    display: block;
-		    font-size: 14px;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			font-size: 12px;
+			font-family: "europa",sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			line-height: 9px;
+			text-align: center;
+			transition: all 150ms ease-in-out;
+		}
+
+		.dropdown-content a.active {
+			color: #ffd400;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {color: #ffd400}
+
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {
+			background-color: #0082c9;
+		}
+
+		.show {
+			display:block;
+		}
+	}
+
+	@media (min-height: 601px) {
+
+		.dropbtn {
+			background-color: #0082c9;
+			color: #000;
+			padding: 16px;
+			font-size: 24px;
+			font-family: "europa",sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			text-transform: capitalize;
+			letter-spacing: 2px;
+			border: none;
+			cursor: pointer;
+			width: 83%;
+			margin-right: 7%;
+			margin-left: 7%;
+		}
+
+		/* Dropdown button on hover & focus */
+		.dropbtn:hover, .dropbtn:focus {
+			background-color: #3e8e41;
+			outline: none;
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+			position: fixed;
+			display: inline-block;
+			top: 100px;
+			margin: auto;
+			z-index: 700;
+			width: 100%;
+			transition: all 150ms ease-in-out;
+		}
+
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #0082c9;
+			width: 83%;
+			margin-right: 7%;
+			margin-left: 7%;
+			padding-bottom: 10px;
+			margin-top: -3px;
+			transition: all 150ms ease-in-out;
+		}
+
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			font-size: 14px;
 			font-family: "europa",sans-serif;
 			font-style: normal;
 			font-weight: 600;
@@ -1036,7 +1072,7 @@ hr {
 
 		/* Change the background color of the dropdown button when the dropdown content is shown */
 		.dropdown:hover .dropbtn {
-		    background-color: #0082c9;
+			background-color: #0082c9;
 		}
 
 		.show {
@@ -1167,7 +1203,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1231,7 +1267,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1296,7 +1332,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1361,7 +1397,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1424,7 +1460,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1488,7 +1524,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1552,7 +1588,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }
@@ -1616,7 +1652,7 @@ hr {
 		position: fixed;
 		height: 55vh;
 		overflow: scroll;
-		  -webkit-overflow-scrolling: touch;
+		-webkit-overflow-scrolling: touch;
 		margin-top: -30px;
 	}
 }

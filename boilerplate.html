@@ -1,0 +1,84 @@
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> 
+
+	<script src="https://use.typekit.net/tvj5pke.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body style="background-color:#FAF8F4">
+
+	<div id="nav">
+
+		<a id="nav-toggle" href="javascript:ReverseDisplay('nav-content')"><span></span></a>
+		<div class="logo"><h1><a href="index.html">Socialism is...</a></h1></div>
+		<div class="about"><h1><a href="#">?</a></h1></div>
+
+		<div id="nav-content" style="display:none">
+			<div class="nav-title"><h2 class="nav-title">Table of Contents</h2>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li class="first"><a href="history.html">history</a></li>
+					<li class="menu"><a href="myths.html">myths and rumors</a></li>
+					<li class="menu"><a href="cvs.html">communism vs socialism</a></li>
+					<li class="menu"><a href="ds.html">democratic socialism</a></li>
+					<li class="menu"><a href="today.html">socialist countries today</a></li>
+					<li class="menu"><a href="figures.html">political figures</a></li>			
+					<li class="menu"><a href="glossary.html">glossary of terms</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" language="JavaScript"><!--
+
+
+	function HideContent(d) {
+		document.getElementById(d).style.display = "none";
+	}
+	function ShowContent(d) {
+		document.getElementById(d).style.display = "block";
+	}
+	function ReverseDisplay(d) {
+		if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+		else { document.getElementById(d).style.display = "none"; }
+	}
+//-->
+
+
+// Expand Nav
+
+// $('#nav').on('click', function() {
+//     $(this).toggleClass('clicked');
+// });
+
+$(function(){
+	$('#nav-toggle').click(function(){
+		$(this).closest('#nav').toggleClass('clicked');
+	});
+	
+});
+
+// Hamburger to x
+
+document.querySelector( "#nav-toggle" )
+.addEventListener( "click", function() {
+	this.classList.toggle( "active" );
+});
+
+</script>
+
+
+
+
+
