@@ -2,7 +2,7 @@
 
 body {
 	margin: auto;
-	height: 2000px;    
+	height: auto;    
 
 }
 
@@ -243,8 +243,33 @@ h1 a:hover {
 	}
 }
 
-p {
+@media (max-width: 500px) {
+	p {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 42px;
+	}
+}
 
+@media (min-width: 501px) {
+	p {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 47px;
+	}
+}
+@media (min-width: 1601px) {
+	p {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 65px;
+	}
 }
 
 a {
@@ -311,7 +336,9 @@ hr {
 		position: fixed;
 		right: 0;
 		transition: height 150ms ease-in-out;
-
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 	}
 
 	#nav.clicked {
@@ -328,7 +355,9 @@ hr {
 		position: fixed;
 		right: 0;
 		transition: width .5s ease-in-out;
-
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 	}
 
 	#nav.clicked {
@@ -887,302 +916,858 @@ hr {
 /*Myths grid
 */
 
-#wrap {
-	overflow: hidden;
+.wrap {
 	margin-right: 60px;
+	position: fixed;
+	width: 100%;
 	height: 100vh;
+
 }
+
 .box {
 	width: 50%;
-	height: 50%;
+	height: 50vh;
 	color: #FFF;
 	position: relative;
 	float: left;
+	overflow: hidden;
 }
 
-.innerContent1 {
-	position: absolute;
-	left: 10px;
-	right: 5px;
-	top: 10px;
-	bottom: 5px;
-	background-image: url("myths_01.png");
-	background-size: cover;
-	padding-top: 9%;
-	padding-left: 4em;
-	padding-right: 4em; 
-}
-.innerContent2 {
-	position: absolute;
-	left: 5px;
-	right: 10px;
-	top: 10px;
-	bottom: 5px;
-	background-image: url("myths_02.png");
-	background-size: cover;
-	padding-top: 9%;
-	padding-left: 4em;
-	padding-right: 4em; 
-}
-.innerContent3 {
-	position: absolute;
-	left: 10px;
-	right: 5px;
-	top: 5px;
-	bottom: 10px;
-	background-image: url("myths_03.png");
-	background-size: cover;
-	padding-top: 9%;
-	padding-left: 4em;
-	padding-right: 4em; 
-}
-.innerContent4 {
-	position: absolute;
-	left: 5px;
-	right: 10px;
-	top: 5px;
-	bottom: 10px;
-	background-image: url("myths_04.png");
-	background-size: cover;
-	padding-top: 9%;
-	padding-left: 4em;
-	padding-right: 4em; 
+
+@media (min-width : 1051px) {
+	.innerContent1 {
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		border-right: 5px solid #fff;
+		top: 0px;
+		border-bottom: 5px solid #fff;
+		bottom: 0px;
+		padding-top: 10%;
+		padding-left: 4em;
+		padding-right: 4em; 
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		transition: all 150ms ease-in-out;
+	}
+
+	div.innerContent1 > div {
+		position: absolute;
+		left: 0px;
+		right: 5px;
+		top: 0px;
+		bottom: 5px;
+		height: 100%;
+		width: 100%;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+		background-image: url("myths_01.png");
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	div.innerContent1:hover > div {
+		-moz-transform: scale(1.2,1.2);
+		-webkit-transform: scale(1.2,1.2);
+		transform: scale(1.2,1.2);    
+	}
+
+
+
+	.innerContent2 {
+		position: absolute;
+		left: 0px;
+		border-left: 5px solid #fff;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		border-bottom: 5px solid #fff;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		transition: all 150ms ease-in-out;
+		padding-top: 10%;
+		padding-left: 4em;
+		padding-right: 4em; 
+	}
+	div.innerContent2 > div {
+		position: absolute;
+		left: 0px;
+		right: 5px;
+		top: 0px;
+		bottom: 5px;
+		height: 100%;
+		width: 100%;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+		background-image: url("myths_02.png");
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	div.innerContent2:hover > div {
+		-moz-transform: scale(1.2,1.2);
+		-webkit-transform: scale(1.2,1.2);
+		transform: scale(1.2,1.2);    
+	}
+	.innerContent3 {
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		border-right: 5px solid #fff;
+		top: 0px;
+		border-top: 5px solid #fff;
+		bottom: 0px;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		transition: all 150ms ease-in-out;
+		padding-top: 10%;
+		padding-left: 4em;
+		padding-right: 4em; 
+	}
+	div.innerContent3 > div {
+		position: absolute;
+		left: 0px;
+		right: 5px;
+		top: 0px;
+		bottom: 5px;
+		height: 100%;
+		width: 100%;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+		background-image: url("myths_03.png");
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	div.innerContent3:hover > div {
+		-moz-transform: scale(1.2,1.2);
+		-webkit-transform: scale(1.2,1.2);
+		transform: scale(1.2,1.2);    
+	}
+	.innerContent4 {
+		position: absolute;
+		left: 0px;
+		border-left: 5px solid #fff;
+		right: 0px;
+		top: 0px;
+		border-top: 5px solid #fff;
+		bottom: 0px;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		transition: all 150ms ease-in-out;
+		padding-top: 10%;
+		padding-left: 4em;
+		padding-right: 4em; 
+	}
+	div.innerContent4 > div {
+		position: absolute;
+		left: 0px;
+		right: 5px;
+		top: 0px;
+		bottom: 5px;
+		height: 100%;
+		width: 100%;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+		-moz-transform: scale(1,1);
+		-webkit-transform: scale(1,1);
+		transform: scale(1,1);
+		background-image: url("myths_04.png");
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		background-size: cover;
+		z-index: -1;
+	}
+
+	div.innerContent4:hover > div {
+		-moz-transform: scale(1.2,1.2);
+		-webkit-transform: scale(1.2,1.2);
+		transform: scale(1.2,1.2);    
+	}
 }
 
 
 @media only screen and (max-width : 480px) {
-	#wrap {
+	.wrap {
 		overflow: hidden;
 		margin-right: 0;
 		padding-top: 60px;
-		height: 200vh;	}
-		/* Smartphone view: 1 tile */
-		.box {
-			width: 100%;
-			height: 25%;   
-		}
-		.innerContent1 {
-			left: 10px;
-			right: 10px;
-			top: 10px;
-			bottom: 5px;
-			padding-top: 9vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent2 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 5px;
-			padding-top: 10vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent3 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 5px;
-			padding-top: 7vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent4 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 10px;
-			padding-top: 10vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-	}
-	@media only screen and (max-width : 650px) and (min-width : 481px) {
-
-		/* Tablet view: 1 tiles */
-		#wrap {
-			overflow: hidden;
-			margin-right: 0;
-			padding-top: 60px;
-			height: 200vh;
-		}
-		.box {
-			width: 100%;
-			height: 25%; 
-		}
-
-		.innerContent1 {
-			left: 10px;
-			right: 10px;
-			top: 10px;
-			bottom: 5px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent2 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 5px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent3 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 5px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent4 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 10px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-	}
-	@media only screen and (max-width : 1050px) and (min-width : 651px) {
-		/* Small desktop / ipad view: 3 tiles */
-		#wrap {
-			overflow: hidden;
-			margin-right: 0;
-			padding-top: 60px;
-			height: 200vh;
-		}
-		.box {
-			width: 100%;
-			height: 25%;
-		}
-
-		.innerContent1 {
-			left: 10px;
-			right: 10px;
-			top: 10px;
-			bottom: 5px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent2 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 5px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent3 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 5px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-		.innerContent4 {
-			left: 10px;
-			right: 10px;
-			top: 5px;
-			bottom: 10px;
-			padding-top: 20vh;
-			padding-left: 1em;
-			padding-right: 1em; 
-		}
-	}
-	@media only screen and (max-width : 1250px) and (min-width : 1051px) {
-		#wrap {
-			overflow: hidden;
-			margin-right: 0;
-			padding-top: 60px;
-			height: 100vh;
-		}
-		.box {
-			width: 50%;
-			height: 50%;
-		}
-	}
-
-	@media (max-width: 500px) {
-		h2.myths {
-			font-size: 25px;
-			font-family: "europa",sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			letter-spacing: .5px;
-			line-height: 35px;
-			color: #fff;
-			text-align: center;
-			text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-		}
-	}
-
-	@media (min-width: 501px) {
-		h2.myths {
-			font-size: 35px;
-			font-family: "europa",sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			letter-spacing: .5px;
-			line-height: 50px;
-			color: #fff;
-			text-align: center;
-			text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-		}
-	}
-
-	@media (min-width: 851px) {
-		h2.myths {
-			font-size: 40px;
-			font-family: "europa",sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			letter-spacing: .5px;
-			line-height: 55px;
-			color: #fff;
-		}
-	}
-
-	@media (min-width: 1001px) {
-		h2.myths {
-			font-size: 50px;
-			font-family: "europa",sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			letter-spacing: .5px;
-			line-height: 65px;
-			color: #fff;
-			text-align: center;
-			text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-		}
-	}
-
-	@media (min-width: 1851px) {
-		h2.myths {
-			font-size: 60px;
-			font-family: "europa",sans-serif;
-			font-style: normal;
-			font-weight: 700;
-			letter-spacing: .5px;
-			line-height: 75px;
-			color: #fff;
-			text-align: center;
-			text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-		}
+		height: 200vh;	
+		position: absolute;
+		display: none;
 	}
 
 
-	h4.myths {
+	/* Smartphone view: 1 tile */
+	.box {
+		width: 100%;
+		height: 25%;   
+	}
+	.innerContent1 {
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 5px;
+		padding-top: 9vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent2 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 5px;
+		padding-top: 10vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent3 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 5px;
+		padding-top: 7vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent4 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 0px;
+		padding-top: 10vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+
+	/* Tablet view: 1 tiles */
+	.wrap {
+		overflow: hidden;
+		margin-right: 0;
+		padding-top: 60px;
+		height: 200vh;
+		width: 100vw;
+		position: absolute;
+		display: none;
+	}
+	.box {
+		width: 100%;
+		height: 25%; 
+	}
+
+	.innerContent1 {
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 5px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent2 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 5px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent3 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 5px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent4 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 0px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+	/* Small desktop / ipad view: 3 tiles */
+	.wrap {
+		overflow: hidden;
+		margin-right: 0;
+		padding-top: 60px;
+		height: 200vh;
+		position: absolute;
+		width: 100vw;
+		display: none;
+	}
+	.box {
+		width: 100%;
+		height: 25%;
+	}
+
+	.innerContent1 {
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 5px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent2 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 5px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent3 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 5px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+	.innerContent4 {
+		left: 0px;
+		right: 0px;
+		top: 5px;
+		bottom: 0px;
+		padding-top: 20vh;
+		padding-left: 1em;
+		padding-right: 1em; 
+	}
+}
+@media only screen and (max-width : 1250px) and (min-width : 1051px) {
+	.wrap {
+		overflow: hidden;
+		margin-right: 0;
+		padding-top: 60px;
+		height: 100vh;
+		width: 100vw;
+	}
+	.box {
+		width: 50%;
+		height: 48%;
+	}
+}
+
+h2.myths {
+	font-size: 3.2vw;
+	font-family: "europa",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .05vw;
+	line-height: 4vw;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 2vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	display: none;
+}
+h4.myths {
+	text-align: center;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	line-height: 1px;
+	color: #fff;
+	font-size: 1.3vw;
+	letter-spacing: .4vw;
+	margin-top: 3.5vw;
+	font-weight: 500;
+	display: none;
+}
+
+
+@media (min-width: 1251px) {
+	.title-box {
+		background-color: #ffd400;
+		position: absolute;
+		width: 46vw;
+		height: 30vw;
+		z-index: 100;
+		top: 50%;
+		left: 49%;
+		margin: -15% 0 0 -23%;
+		-webkit-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
+		-moz-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
+		box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
+	}
+}
+
+@media (max-width: 1250px) {
+	.title-box {
+		background-color: #ffd400;
+		position: absolute;
+		width: 46vw;
+		height: 30vw;
+		z-index: 100;
+		top: 50%;
+		left: 50%;
+		margin: -15% 0 0 -23%;
+		-webkit-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
+		-moz-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
+		box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
+	}
+}
+
+@media (max-width: 1050px) {
+	.title-box {
+		display: none;
+	}
+}
+
+.mythTitleText {
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+
+
+	h2.mythsTitle {
+		font-size: 4vw;
+		font-family: "europa",sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		letter-spacing: .1vw;
+		line-height: 5vw;
+		color: #000;
+		text-align: center;
+		margin-bottom: 0;
+		margin-top: 6.5vw;
+	}
+
+	p.mythsTitle {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 2vw;
+		text-align: center;
+		line-height: 3vw;
+	}
+
+
+
+
+@media (max-width: 500px) {
+	.titleBoxSmall {
+		position: fixed;
+		bottom: 0;
+		background-color: #ffd400;
+		height: 50px;
+		width: 100vw;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		display: none;
+		z-index: 800;
+	}
+}
+
+@media (min-width: 501px) {
+	.titleBoxSmall {
+		position: fixed;
+		bottom: 0;
+		background-color: #ffd400;
+		height: 50px;
+		width: 225px;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		display: none;
+		z-index: 800;
+	}
+}
+@media (min-width: 1251px) {
+	.titleBoxSmall {
+		position: fixed;
+		top: 0;
+		background-color: #ffd400;
+		height: 50px;
+		width: 225px;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		display: none;
+		z-index: 800;
+	}
+}
+
+
+h1.mythsTitleSmall {
+	font-size: 14px;
+	margin-top: -8px;
+	margin-left: 0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	position: relative;
+}
+
+@media (max-width: 500px) {
+	.myths-text{
+		width: 78%;
+		margin-left: 11%;
+		margin-right: 11%;
+		position: absolute;
+		height: auto;
+	}
+}
+
+@media (min-width: 501px) {
+	.myths-text{
+		width: 68%;
+		margin-left: 16%;
+		margin-right: 16%;
+		margin-top: 25vw;
+		position: absolute;
+		height: auto;
+		margin-bottom: 20vw;
+	}
+}
+
+@media (min-width: 1001px) {
+	.myths-text{
+		width: 55%;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 100vw;
+		position: absolute;
+		height: auto;
+		margin-bottom: 20vw;
+	}
+}
+
+@media (max-width: 500px) {
+	h3.home-title{
+		font-size: 34px;
+	}
+}
+
+@media (min-width: 501px) {
+	h3.home-title{
+		font-size: 43px;
+	}
+}
+
+@media (min-width: 1601px) {
+	h3.home-title{
+		font-size: 63px;
+	}
+}
+
+a.def{
+	color: #ffd400;
+	text-decoration: underline;
+}
+
+span.tooltip:hover{
+	cursor: help;
+}
+
+@media (max-width: 1050px) {
+	.mythContent{
+		height: auto;
+		width: 100%;
+		position: absolute;
+		display: block;
+		clear: both;
+		margin-top: 60px;
+	}
+}
+
+@media (min-width: 1051px) {
+	.mythContent{
+		height: auto;
+		width: 100%;
+		position: absolute;
+		display: block;
+		clear: both;
+		margin-top: 100vh;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mythContent{
+		height: auto;
+		width: 100%;
+		position: absolute;
+		display: block;
+		clear: both;
+		margin-top: 100vh;
+	}
+}
+
+@media (min-width: 1601px) {
+	.mythContent{
+		height: auto;
+		width: 100%;
+		position: absolute;
+		display: block;
+		clear: both;
+		margin-top: 100vh;
+	}
+}
+
+.mythContent1 {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+.mythContent2 {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+@media (max-width: 700px) {
+	.mythsBanner1{
+		background-image: url("myths_01.png");
+		background-position: center; 
+		background-size: cover;
+		width: 100%;
+		height: 50vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+
+
+	.mythsBanner2{
+		background-image: url("myths_02.png");
+		background-position: top; 
+		background-size: cover;
+		width: 100%;
+		height: 50vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+	.mythsBanner3{
+		background-image: url("myths_03.png");
+		background-position: center; 
+		background-size: cover;
+		width: 100%;
+		height: 50vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+	.mythsBanner4{
+		background-image: url("myths_04.png");
+		background-position: center; 
+		background-size: cover;
+		width: 100%;
+		height: 50vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+}
+
+@media (min-width: 701px) {
+	.mythsBanner1{
+		background-image: url("myths_01.png");
+		background-position: center; 
+		background-size: cover;
+		width: 100%;
+		height: 30vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+
+
+	.mythsBanner2{
+		background-image: url("myths_02.png");
+		background-position: top; 
+		background-size: cover;
+		width: 100%;
+		height: 30vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+	.mythsBanner3{
+		background-image: url("myths_03.png");
+		background-position: center; 
+		background-size: cover;
+		width: 100%;
+		height: 30vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+	.mythsBanner4{
+		background-image: url("myths_04.png");
+		background-position: center; 
+		background-size: cover;
+		width: 100%;
+		height: 30vw;
+		position: relative;
+		padding-top: 0px;
+		border-top: 10px solid #000;
+	}
+}
+
+@media (max-width: 500px) {
+	.myths-text{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5vw;
+		position: relative;
+		height: auto;
+		margin-bottom: 10vw;
+	}
+}
+
+@media (min-width: 501px) {
+	.myths-text{
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+		margin-top: 5vw;
+		position: relative;
+		height: auto;
+		margin-bottom: 10vw;
+	}
+}
+
+@media (min-width: 1001px) {
+	.myths-text{
+		width: 55%;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 5vw;
+		position: relative;
+		height: auto;
+		margin-bottom: 10vw;
+	}
+}
+
+@media (max-width: 700px) {
+	h2.bannerMyths {
+		font-size: 6vw;
+		font-family: "europa",sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		letter-spacing: .05vw;
+		line-height: 8vw;
+		color: #fff;
+		text-align: center;
+		margin-bottom: 0;
+		margin-top: .5em;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	}
+	h4.bannerMyths {
 		text-align: center;
 		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 		line-height: 1px;
+		color: #fff;
+		font-size: 3vw;
+		letter-spacing: .4vw;
+		margin-bottom: 0px;
+		margin-top: 15vw;
+		font-weight: 500;
 	}
+}
+
+@media (min-width: 701px) {
+	h2.bannerMyths {
+		font-size: 5.3vw;
+		font-family: "europa",sans-serif;
+		font-style: normal;
+		font-weight: 700;
+		letter-spacing: .05vw;
+		line-height: 6vw;
+		color: #fff;
+		text-align: center;
+		margin-bottom: 0;
+		margin-top: .5em;
+		padding-left: 16vw;
+		padding-right: 16vw;
+		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	}
+	h4.bannerMyths {
+		text-align: center;
+		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+		line-height: 1px;
+		color: #fff;
+		font-size: 2vw;
+		letter-spacing: .4vw;
+		margin-bottom: 0px;
+		margin-top: 7vw;
+		font-weight: 500;
+	}
+}
+
+/*h4.bannerMyths {
+	text-align: center;
+	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+	line-height: 1px;
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-bottom: 0px;
+	margin-top: 6vw;
+	}*/
+
+	.firstLetter{
+		float: left;
+		font-size: 3.26em;
+		line-height: 0.5;
+		margin: 0.205em 0.153em 0 0;
+		font-family: "europa",sans-serif;
+		font-weight: 800;
+		color: #0082c9;
+	}
+
+	.cover {
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 90;
+	}
+
+

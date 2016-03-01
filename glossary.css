@@ -311,7 +311,9 @@ hr {
 		position: fixed;
 		right: 0;
 		transition: height 150ms ease-in-out;
-
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 	}
 
 	#nav.clicked {
@@ -328,7 +330,9 @@ hr {
 		position: fixed;
 		right: 0;
 		transition: width .5s ease-in-out;
-
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 	}
 
 	#nav.clicked {
@@ -1705,5 +1709,40 @@ hr {
 		margin-top: 0;
 	}
 }
+
+@media (min-width: 501px) {
+	.titleBoxSmall {
+		position: fixed;
+		bottom: 0;
+		background-color: #ffd400;
+		height: 50px;
+		width: 225px;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+	}
+}
+@media (min-width: 1251px) {
+	.titleBoxSmall {
+		position: fixed;
+		top: 0;
+		background-color: #ffd400;
+		height: 50px;
+		width: 225px;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+	}
+}
+
+
+	h1.mythsTitleSmall {
+		font-size: 14px;
+		margin-top: -8px;
+		margin-left: 0px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+	}
 
 

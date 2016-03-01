@@ -16,6 +16,9 @@
 
    <script src="https://use.typekit.net/tvj5pke.js"></script>
    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+   <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+   <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
    <title>Socialism Is...</title>
 
 </head>
@@ -82,6 +85,16 @@ document.querySelector( "#nav-toggle" )
 	this.classList.toggle( "active" );
 });
 
+// show/hide definition
+
+$(document).ready(function() {
+	$('.tooltip').tooltipster({
+		content: $('<span><em>Socialism</em>: any of various economic and political theories advocating collective or governmental ownership and administration of the means of production and distribution of goods.<br><a href="glossary.html" class="def">Full glossary</a></span>'),
+		interactive: true,
+		interactiveTolerance: 100
+	});
+
+});
 </script>
 
 

@@ -365,7 +365,9 @@ small {
 		position: fixed;
 		right: 0;
 		transition: height 150ms ease-in-out;
-
+		-webkit-box-shadow: -9px 5px 42px -15px rgba(0,0,0,0.41);
+		-moz-box-shadow: -9px 5px 42px -15px rgba(0,0,0,0.41);
+		box-shadow: -9px 5px 42px -15px rgba(0,0,0,0.41);
 	}
 
 	#nav.clicked {
@@ -382,7 +384,9 @@ small {
 		position: fixed;
 		right: 0;
 		transition: width .5s ease-in-out;
-
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 	}
 
 	#nav.clicked {
