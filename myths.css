@@ -919,7 +919,7 @@ hr {
 .wrap {
 	margin-right: 60px;
 	position: fixed;
-	width: 100%;
+	width: calc(100% - 60px);
 	height: 100vh;
 
 }
@@ -1321,7 +1321,7 @@ h4.myths {
 		height: 30vw;
 		z-index: 100;
 		top: 50%;
-		left: 49%;
+		left: calc(50% - 30px);
 		margin: -15% 0 0 -23%;
 		-webkit-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
 		-moz-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
@@ -1337,7 +1337,7 @@ h4.myths {
 		height: 30vw;
 		z-index: 100;
 		top: 50%;
-		left: 50%;
+		left: calc(50% - 30px);
 		margin: -15% 0 0 -23%;
 		-webkit-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
 		-moz-box-shadow: 4px 4px 25px 5px rgba(0,0,0,0.37);
