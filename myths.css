@@ -332,7 +332,7 @@ hr {
 		width: 100%;
 		height: 60px;
 		background: #ffd400; 
-		z-index: 1000;
+		z-index: 10000;
 		position: fixed;
 		right: 0;
 		transition: height 150ms ease-in-out;
@@ -351,7 +351,7 @@ hr {
 		width: 60px;
 		height: 100%;
 		background: #ffd400;
-		z-index: 1000;
+		z-index: 10000;
 		position: fixed;
 		right: 0;
 		transition: width .5s ease-in-out;
@@ -916,9 +916,15 @@ hr {
 /*Myths grid
 */
 
+#f {
+	width: 100%;
+	height: auto;
+	position:fixed; top:0; left:0;
+}
+
 .wrap {
 	margin-right: 60px;
-	position: fixed;
+	position: absolute;
 	width: calc(100% - 60px);
 	height: 100vh;
 
@@ -966,7 +972,7 @@ hr {
 		-moz-transform: scale(1,1);
 		-webkit-transform: scale(1,1);
 		transform: scale(1,1);
-		background-image: url("myths_01.png");
+		background-image: url("myths_01_02.png");
 		-moz-background-size: cover;
 		-webkit-background-size: cover;
 		background-size: cover;
@@ -1285,18 +1291,18 @@ hr {
 }
 
 h2.myths {
-	font-size: 3.2vw;
+	font-size: 2.8vw;
 	font-family: "europa",sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	letter-spacing: .05vw;
-	line-height: 4vw;
+	line-height: 3.3vw;
 	color: #fff;
 	text-align: center;
 	margin-bottom: 0;
 	margin-top: 2vw;
-	padding-left: 1vw;
-	padding-right: 1vw;
+	padding-left: .5vw;
+	padding-right: .5vw;
 	text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 	display: none;
 }
@@ -1393,7 +1399,7 @@ h4.myths {
 		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		display: none;
-		z-index: 800;
+		z-index: 1500;
 	}
 }
 
@@ -1408,7 +1414,7 @@ h4.myths {
 		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		display: none;
-		z-index: 800;
+		z-index: 1500;
 	}
 }
 @media (min-width: 1251px) {
@@ -1422,7 +1428,7 @@ h4.myths {
 		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		display: none;
-		z-index: 800;
+		z-index: 1500;
 	}
 }
 
@@ -1444,6 +1450,8 @@ h1.mythsTitleSmall {
 		margin-right: 11%;
 		position: absolute;
 		height: auto;
+		background-color: #FAF8F4;
+		z-index: 1000;
 	}
 }
 
@@ -1456,6 +1464,8 @@ h1.mythsTitleSmall {
 		position: absolute;
 		height: auto;
 		margin-bottom: 20vw;
+		background-color: #FAF8F4;
+		z-index: 1000;
 	}
 }
 
@@ -1470,6 +1480,8 @@ h1.mythsTitleSmall {
 		margin-bottom: 20vw;
 	}
 }
+
+
 
 @media (max-width: 500px) {
 	h3.home-title{
@@ -1556,7 +1568,7 @@ span.tooltip:hover{
 
 @media (max-width: 700px) {
 	.mythsBanner1{
-		background-image: url("myths_01.png");
+		background-image: url("myths_01_02.png");
 		background-position: center; 
 		background-size: cover;
 		width: 100%;
@@ -1601,7 +1613,7 @@ span.tooltip:hover{
 
 @media (min-width: 701px) {
 	.mythsBanner1{
-		background-image: url("myths_01.png");
+		background-image: url("myths_01_02.png");
 		background-position: center; 
 		background-size: cover;
 		width: 100%;
