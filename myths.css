@@ -248,8 +248,8 @@ h1 a:hover {
 		font-family: "source-serif-pro",sans-serif;
 		font-style: normal;
 		font-weight: 400;
-		font-size: 22px;
-		line-height: 42px;
+		font-size: 18px;
+		line-height: 30px;
 	}
 }
 
@@ -1445,9 +1445,9 @@ h1.mythsTitleSmall {
 
 @media (max-width: 500px) {
 	.myths-text{
-		width: 78%;
-		margin-left: 11%;
-		margin-right: 11%;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
 		position: absolute;
 		height: auto;
 		background-color: #FAF8F4;
@@ -1457,9 +1457,9 @@ h1.mythsTitleSmall {
 
 @media (min-width: 501px) {
 	.myths-text{
-		width: 68%;
-		margin-left: 16%;
-		margin-right: 16%;
+		width: 78%;
+		margin-left: 11%;
+		margin-right: 11%;
 		margin-top: 25vw;
 		position: absolute;
 		height: auto;
