@@ -2,8 +2,8 @@
 
 body {
 	margin: auto;
-	height: 2000px;    
-
+	height: auto;    
+	overflow-x:hidden;  
 }
 
 h1 {
@@ -243,8 +243,62 @@ h1 a:hover {
 	}
 }
 
-p {
+@media (max-width: 500px) {
+	p.home {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
 
+@media (min-width: 501px) {
+	p.home {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 47px;
+	}
+}
+@media (min-width: 1601px) {
+	p.home {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 65px;
+	}
+}
+
+@media (max-width: 500px) {
+	p {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 26px;
+	}
+}
+
+@media (min-width: 501px) {
+	p {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 41px;
+	}
+}
+@media (min-width: 1601px) {
+	p {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 55px;
+	}
 }
 
 a {
@@ -263,7 +317,6 @@ hr {
 		margin-top:60px;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;
-
 		height: 70vh;
 	}
 }
@@ -307,7 +360,7 @@ hr {
 		width: 100%;
 		height: 60px;
 		background: #ffd400; 
-		z-index: 1000;
+		z-index: 10000;
 		position: fixed;
 		right: 0;
 		transition: height 150ms ease-in-out;
@@ -326,7 +379,7 @@ hr {
 		width: 60px;
 		height: 100%;
 		background: #ffd400;
-		z-index: 1000;
+		z-index: 10000;
 		position: fixed;
 		right: 0;
 		transition: width .5s ease-in-out;
@@ -748,7 +801,7 @@ hr {
 
 @media (min-width: 1001px) {
 	.menu {
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-bottom: solid #000 4px;
@@ -757,7 +810,7 @@ hr {
 	}
 
 	.first {
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-top: solid #000 4px;
@@ -767,7 +820,7 @@ hr {
 	}
 
 	.menu:hover{
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-bottom: solid #000 4px;
@@ -775,7 +828,7 @@ hr {
 	}
 
 	.first:hover{
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-top: solid #000 4px;
@@ -826,7 +879,7 @@ hr {
 	}
 
 	.menu {
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-bottom: solid #000 5px;
@@ -834,7 +887,7 @@ hr {
 	}
 
 	.menu:hover{
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-bottom: solid #000 5px;
@@ -843,7 +896,7 @@ hr {
 
 
 	.first {
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-top: solid #000 5px;
@@ -852,7 +905,7 @@ hr {
 	}
 
 	.first:hover {
-		width: 40%;
+		width: 50%;
 		margin: auto;
 		height: auto;
 		border-top: solid #000 5px;
@@ -886,15 +939,4 @@ hr {
 		text-decoration: none;
 		color: #000;
 	}
-}
-
-/*Tooltips*/
-
-a.def{
-	color: #ffd400;
-	text-decoration: underline;
-}
-
-span.tooltip:hover{
-	cursor: help;
 }

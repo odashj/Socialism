@@ -1,89 +1,91 @@
-.woman1 {
+.hand {
 	position: absolute;
 	bottom: 0;
+	top: -1vw;
 }
 
-.woman1 img {
-	max-width: 24vw;
+.hand img {
+	max-width: 45vw;
 }
 
-.woman2 {
+.ballot1 {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	top: 30vw;
+	left: 40vw;
+	-ms-transform: rotate(5deg); /* IE 9 */
+	-webkit-transform: rotate(5deg); /* Safari */
+	transform: rotate(5deg);
 }
 
-.woman2 img {
-	max-width: 30vw;
-}
-
-.bubble1{
-	position: absolute;
-	z-index: 1;
-	margin-left: 22vw;
-	margin-top: 17vw;
-}
-
-.bubble1 img{
-	max-width: 23vw;
-
-}
-
-.bubble2{
-	position: absolute;
-	z-index: 1;
-	margin-left: 33vw;
-	margin-top: 7vw;
-}
-
-.bubble2 img{
-	max-width: 15vw;
-
-}
-
-.bubble3{
-	position: absolute;
-	z-index: 1;
-	margin-left: 35vw;
-	margin-top: 30vw;
-}
-
-.bubble3 img{
-	width: 18vw;
-}
-
-.bubble4{
-	position: absolute;
-	position: absolute;
-	z-index: 1;
-	margin-left: 55vw;
-	margin-top: 29vw;
-}
-
-.bubble4 img{
-	max-width: 14vw;
-}
-
-.bubble5{
-	position: absolute;
-	z-index: 0;
-	margin-left: 46vw;
-	margin-top: 8vw;
-}
-
-.bubble5 img{
+.ballot1 img {
 	max-width: 20vw;
 }
 
-.bubble6{
+.ballot2 {
 	position: absolute;
-	z-index: 0;
-	margin-left: 54vw;
-	margin-top: 12vw;
+	top: 24vw;
+	left: 5vw;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	-webkit-transform: rotate(20deg); /* Safari */
+	transform: rotate(20deg);
+	z-index: 1;
 }
 
-.bubble6 img{
-	max-width: 18vw;
+.ballot2 img {
+	max-width: 20vw;
+}
+
+.ballot3 {
+	position: absolute;
+	top: 4vw;
+	left: 56vw;
+	-ms-transform: rotate(15deg); /* IE 9 */
+	-webkit-transform: rotate(15deg); /* Safari */
+	transform: rotate(15deg);
+}
+
+.ballot3 img {
+	max-width: 20vw;
+}
+
+.ballot4 {
+	position: absolute;
+	top: 15vw;
+	left: 70vw;
+	-ms-transform: rotate(-10deg); /* IE 9 */
+	-webkit-transform: rotate(-10deg); /* Safari */
+	transform: rotate(-10deg);
+}
+
+.ballot4 img {
+	max-width: 20vw;
+}
+
+.ballot5 {
+	position: absolute;
+	top: 36vw;
+	left: 66vw;
+	-ms-transform: rotate(25deg); /* IE 9 */
+	-webkit-transform: rotate(25deg); /* Safari */
+	transform: rotate(25deg);
+}
+
+.ballot5 img {
+	max-width: 20vw;
+}
+
+.ballot6 {
+	position: absolute;
+	top: 35vw;
+	left: 10vw;
+	-ms-transform: rotate(-25deg); /* IE 9 */
+	-webkit-transform: rotate(-25deg); /* Safari */
+	transform: rotate(-25deg);
+	z-index: 0;
+}
+
+.ballot6 img {
+	max-width: 20vw;
 }
 
 @media (max-width: 700px) {
@@ -120,7 +122,7 @@
 
 @media (min-width: 701px) {
 	.pageBanner1{
-		background-image: url("myths_01_02.png");
+		background-image: url("history_01.png");
 		background-position: center; 
 		background-size: cover;
 		width: 100%;
@@ -132,7 +134,7 @@
 
 
 	.pageBanner2{
-		background-image: url("myths_02.png");
+		background-image: url("history_02.png");
 		background-position: center; 
 		background-size: cover;
 		width: 100%;
@@ -142,7 +144,7 @@
 		border-top: 20px solid #FAF8F4;
 	}
 	.pageBanner3{
-		background-image: url("myths_03.png");
+		background-image: url("history_03.png");
 		background-position: center; 
 		background-size: cover;
 		width: 100%;
@@ -153,7 +155,7 @@
 	}
 
 	.pageBanner4{
-		background-image: url("myths_04.png");
+		background-image: url("history_03.png");
 		background-position: center; 
 		background-size: cover;
 		width: 100%;
@@ -166,7 +168,7 @@
 
 @media (min-width: 1251px) {
 	.pageBanner1{
-		background-image: url("myths_01_02.png");
+		background-image: url("history_01.png");
 		background-position: center; 
 		background-size: cover;
 		width: calc(100% - 60px);
@@ -178,7 +180,7 @@
 
 
 	.pageBanner2{
-		background-image: url("myths_02.png");
+		background-image: url("history_02.png");
 		background-position: center; 
 		background-size: cover;
 		width: calc(100% - 60px);
@@ -188,7 +190,7 @@
 		border-top: 20px solid #FAF8F4;
 	}
 	.pageBanner3{
-		background-image: url("myths_03.png");
+		background-image: url("history_03.png");
 		background-position: center; 
 		background-size: cover;
 		width: calc(100% - 60px);
@@ -199,7 +201,7 @@
 	}
 
 	.pageBanner4{
-		background-image: url("myths_04.png");
+		background-image: url("history_04.png");
 		background-position: center; 
 		background-size: cover;
 		width: calc(100% - 60px);
@@ -209,4 +211,3 @@
 		border-top: 20px solid #FAF8F4;
 	}
 }
-

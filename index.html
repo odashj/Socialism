@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-
+	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
@@ -27,7 +28,7 @@
 
 </head>
 
-<body style="background-color:#FAF8F4">
+<body style="background-color:#ffffff">
 
 	<div id="nav">
 
@@ -40,12 +41,12 @@
 			</div>
 			<div class="nav-links">
 				<ul>
-					<li class="first"><a href="history.html">history</a></li>
+					<li class="first"><a href="history.html">a brief history of socialism</a></li>
 					<li class="menu"><a href="myths.html">myths and rumors</a></li>
-					<li class="menu"><a href="cvs.html">communism vs socialism</a></li>
 					<li class="menu"><a href="ds.html">democratic socialism</a></li>
+					<li class="menu"><a href="cvs.html">democratic socialism vs communism</a></li>
 					<li class="menu"><a href="today.html">socialist countries today</a></li>
-					<li class="menu"><a href="figures.html">political figures</a></li>			
+					<li class="menu"><a href="figures.html">political figures of socialism</a></li>			
 					<li class="menu"><a href="glossary.html">glossary of terms</a></li>
 				</ul>
 			</div>
@@ -80,7 +81,7 @@
 			<div class="crowd3 animated slideInUp2"><img src="crowd_03.png"></div>
 			<div class="crowd4 animated slideInUp3"><img src="crowd_01.png"></div>
 		</div>
-		<div class="allFists"><!-- <div class="allFists animated bounceOutDown"> -->
+		<div class="allFists">
 			<div class="fist1 animated bounceInUp1"><img src="fist_01.png"></div>
 			<div class="fist2 animated bounceInUp2"><img src="fist_02.png"></div>
 			<div class="fist3 animated bounceInUp3"><img src="fist_03.png"></div>
@@ -89,24 +90,27 @@
 			<div class="fist6 animated bounceInUp6"><img src="fist_06.png"></div>
 			<div class="fist7 animated bounceInUp7"><img src="fist_07.png"></div>
 		</div>
+
+		<div class="more">
+			<h4 class="learn-more">Scroll to Learn More</h4>
+		</div>
 	</div>
 
-	<a href="#scroll-down"><div class="more">
-		<h4 class="learn-more">Learn more ↓</h4>
-	</div></a>
-	<a id="scroll-down"></a>
-	<div class="reagan1 animated zoomIn"><img src="reagan_01.png"></div>
-	<div class="reagan2 animated slideInLeft"><img src="reagan_02.png"></div>
-	<div class="home-text">
-		<h3 class="home-title">Socialism is a bad word in America.</h3>
-		<p>Ugite dit, saerenim est, est, ame eosanda dolupti beat volore volor maio. Sedit ipis <span class="tooltip" style="border-bottom: solid 2px #0082c9;">Socialism</span> am eat occus inctori buscia dollam iur, eatem qui ad erchic tem quas aut officienti voluptatur? Quiatus aepedit verem velit estisqui berum nam, sit velessit, voloratium fuga. Itate ipsame si blabore perupta temquam, serum num evelis et endant as et ut eum nem apiducia porerit molor sam quaturem vidignihilit aut aut et ent apit ex eles molupid essustis discitat.</p>
-		<p>Tur? Quia ducil et que si velest eaturitis consed quo magnimus asitat quo to tem ium digendant quissitio. Tem. Obit facerior magnam aciam fugia con pa volorer ibusapicitio enecumet et qui verat pl que si velest eaturitis consed quo magnimus asitat quo to tem ium digendant quissitio. Tem. Obit facerior magnam aciam fugia con pa volorer ibusapicitio enecumet et qui verat pl.</p>
 
-		<a href="history.html"><div class="next">
-			<h4 class="next-button">Next: History</h4>
-		</div></a>
+
+	<div class="home-content">
+		<div class="reagan1 animated zoomIn"><img src="reagan_01.png"></div>
+		<div class="reagan2 animated slideInLeft"><img src="reagan_02.png"></div>
+		<div class="home-text">
+			<h3 class="home-title">Socialism is a bad word in America.</h3>
+			<p class="home">Ugite dit, saerenim est, est, ame eosanda dolupti beat volore volor maio. Sedit ipis <span class="tooltip" style="border-bottom: solid 2px #0082c9;">Socialism</span> am eat occus inctori buscia dollam iur, eatem qui ad erchic tem quas aut officienti voluptatur? Quiatus aepedit verem velit estisqui berum nam, sit velessit, voloratium fuga. Itate ipsame si blabore perupta temquam, serum num evelis et endant as et ut eum nem apiducia porerit molor sam quaturem vidignihilit aut aut et ent apit ex eles molupid essustis discitat.</p>
+			<p class="home">Tur? Quia ducil et que si velest eaturitis consed quo magnimus asitat quo to tem ium digendant quissitio. Tem. Obit facerior magnam aciam fugia con pa volorer ibusapicitio enecumet et qui verat pl que si velest eaturitis consed quo magnimus asitat quo to tem ium digendant quissitio. Tem. Obit facerior magnam aciam fugia con pa volorer ibusapicitio enecumet et qui verat pl.</p>
+
+			<a href="history.html"><div class="next">
+				<h4 class="next-button">Next: History</h4>
+			</div></a>
+		</div>
 	</div>
-
 
 </body>
 
@@ -163,16 +167,6 @@ $(function(){
 
 
 
-// Scroll to hide landing page
-$(window).scroll(function() {
-
-	if ($(this).scrollTop()>0)
-	{
-		$('.landing-bg, .more').fadeOut();
-	}	speed: 300
-	
-});
-
 // show/hide definition
 
 $(document).ready(function() {
@@ -183,6 +177,76 @@ $(document).ready(function() {
 	});
 
 });
+
+
+
+$(window).scroll(function() {
+
+	if ($(this).scrollTop()>0)
+	{
+		$('.allFists').css({"opacity": "0","transition":"all 300ms ease-in-out"});
+	}
+	else
+	{
+		$('.allFists').css({"opacity": "1","transition":"all 300ms ease-in-out"});
+	}
+});
+
+$(window).scroll(function() {
+
+	if ($(this).scrollTop()>0)
+	{
+		$('.fullCrowd').css({"opacity": "0","transition":"all 300ms ease-in-out"});
+	}
+	else
+	{
+		$('.fullCrowd').css({"opacity": "1","transition":"all 300ms ease-in-out"});
+	}
+});
+
+
+$(window).scroll(function() {
+
+	if ($(this).scrollTop()>0)
+	{
+		$('.eagles').css({"opacity": "0","transition":"all 300ms ease-in-out"});
+	}
+	else
+	{
+		$('.eagles').css({"opacity": "1","transition":"all 300ms ease-in-out"});
+	}
+});
+
+</script>
+
+
+<script type="text/javascript">
+	var windw = this;
+	var winHeight = window.innerHeight - 100;
+
+	$.fn.followTo = function ( pos ) {
+		var $this = this,
+		$window = $(windw);
+		
+		$window.scroll(function(e){
+			if ($window.scrollTop() > pos) {
+				$this.css({
+					position: 'absolute',
+					top: pos
+				});
+			} else {
+				$this.css({
+					position: 'fixed',
+					top: 0
+				});
+			}
+		});
+	};
+
+	$('.home-content').followTo(winHeight);
+
+
+
 
 </script>
 
