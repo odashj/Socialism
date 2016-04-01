@@ -3,6 +3,8 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="page.css">
 	<link rel="stylesheet" type="text/css" href="myths.css">
+		<link rel="stylesheet" type="text/css" href="nav.css">
+
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="animations.css">
 
@@ -26,27 +28,28 @@
 <body style="background-color:#FAF8F4">
 
 	<div id="nav">
-
-		<a id="nav-toggle" href="javascript:ReverseDisplay('nav-content')"><span></span></a>
-		<div class="logo"><h1><a href="index.html">Socialism is...</a></h1></div>
-		<div class="about"><h1><a href="#">?</a></h1></div>
-
+		<a id="nav-icon3" href="javascript:ReverseDisplay('nav-content')" >
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="logo"><h1><a href="index.html" class="hvr-shrink">Socialism is...</a></h1></div>
+		<div id="about"><h1><a href="#">?</a></h1></div>
 		<div id="nav-content" style="display:none">
-			<div class="nav-title"><h2 class="nav-title">Table of Contents</h2>
-			</div>
-			<div class="nav-links">
-				<ul>
-					<li class="first"><a href="history.html">a brief history of socialism</a></li>
-					<li class="menu"><a href="myths.html">myths and rumors</a></li>
-					<li class="menu"><a href="ds.html">democratic socialism</a></li>
-					<li class="menu"><a href="cvs.html">democratic socialism vs communism</a></li>
-					<li class="menu"><a href="today.html">socialist countries today</a></li>
-					<li class="menu"><a href="figures.html">political figures of socialism</a></li>			
-					<li class="menu"><a href="glossary.html">glossary of terms</a></li>
-				</ul>
+			<div class="nav-links" class="hidden">
+				<h3 class="nav-item"><a href="index.html">Home</a></h3>
+				<h3 class="nav-item"><a href="history.html">History of Socialism</a></h3>
+				<h3 class="nav-item"><a href="myths.html">Myths & Rumors</a></h3>
+				<h3 class="nav-item"><a href="ds.html">Democratic Socialism</a></h3>
+				<h3 class="nav-item"><a href="glossary.html">Glossary</a></h3>
 			</div>
 		</div>
+		<div id="about-content" style="display:none">
+			<p class="home">Socialism is a bad word in America. Politicians use the term ‘socialist’ as an insult because it represents something foreign, scary, and un-American. What most people don’t realize is that America is, in fact, already Socialist. Many things that make this country what it is—Social Security, Public Schools, Highways—are all, by definition, Socialist entities. The goal of Socialism is… is to shift the the way we think about Socialism. Socialism isn’t something to be afraid of, it’s something that we already experience and appreciate.</p>
+		</div>
 	</div>
+
 	<div class="landing">
 		<div class="woman1"><img src="myths_woman_01.png"></div>
 		<div class="woman2"><img src="myths_woman_02.png"></div>
@@ -125,52 +128,80 @@
 	<script type="text/javascript" language="JavaScript"><!--
 
 
-		function HideContent(d) {
-			document.getElementById(d).style.display = "none";
-		}
-		function ShowContent(d) {
-			document.getElementById(d).style.display = "block";
-		}
-		function ReverseDisplay(d) {
-			if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
-			else { document.getElementById(d).style.display = "none"; }
-		}
-//-->
+	
+	function HideContent(d) {
+		document.getElementById(d).style.display = "none";
+	}
+	function ShowContent(d) {
+		document.getElementById(d).style.display = "block";
+	}
+	function ReverseDisplay(d) {
+		if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+		else { document.getElementById(d).style.display = "none"; }
+	}
 
 
-// Expand Nav
+	$(function(){
+		$('#nav-icon3').click(function(){
+			$(this).closest('#nav').toggleClass('clicked');
+		});
 
-// $('#nav').on('click', function() {
-//     $(this).toggleClass('clicked');
-// });
-
-$(function(){
-	$('#nav-toggle').click(function(){
-		$(this).closest('#nav').toggleClass('clicked');
 	});
 
+	$(function(){
+		$('#about').click(function(){
+			$(this).closest('#nav').addClass('clicked');
+		});
+
+	});
+
+
+
+	$(document).ready(function() {
+		$('#nav-icon3').on('click', function() {
+			$('.nav-links').fadeToggle(700);
+		});
+	});
+$(document).ready(function() {
+		$('#about').on('click', function() {
+			$('.nav-links').fadeIn(700);
+		});
+	});
+
+	$(document).ready(function() {
+		$('#about').on('click', function() {
+			$('#about-content').fadeToggle(700);
+		});
+	});
+
+		
+
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+	});
 });
 
-// Hamburger to x
+$('#about').click( function() {
+    $("#nav-icon3").addClass("open");
+} );
 
-document.querySelector( "#nav-toggle" )
-.addEventListener( "click", function() {
-	this.classList.toggle( "active" );
-});
+$('#nav-icon3').click( function() {
+    $("#about-content").fadeOut(700);
+} );
 
 
+		$(window).scroll(function() {
 
-$(window).scroll(function() {
-
-	if ($(this).scrollTop()>window.innerHeight)
-	{
-		$('.titleBoxSmall').slideDown(200);
-	}
-	else
-	{
-		$('.titleBoxSmall').slideUp(200);
-	}
-});
+			if ($(this).scrollTop()>window.innerHeight)
+			{
+				$('.titleBoxSmall').slideDown(200);
+			}
+			else
+			{
+				$('.titleBoxSmall').slideUp(200);
+			}
+		});
 
 
 

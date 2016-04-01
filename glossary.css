@@ -831,6 +831,7 @@
 		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		z-index: 1000;
 	}
 }
 @media (min-width: 1251px) {
@@ -843,17 +844,43 @@
 		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		z-index: 1000;
 	}
 }
 
 
-	h1.mythsTitleSmall {
-		font-size: 14px;
-		margin-top: -8px;
-		margin-left: 0px;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		text-align: center;
-	}
+h1.mythsTitleSmall {
+	font-size: 14px;
+	margin-top: -8px;
+	margin-left: 0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+}
 
+@media (min-width: 1251px) {
+	.wrapper {
+		width: auto;
+		height: auto;
+		display: none;
+		margin-left: 2%;
+		margin-top: 2%;
+		position: absolute;
+	}
+}
+
+@media (max-width: 1250px) {
+	.wrapper {
+		width: auto;
+		height: auto;
+		display: none;
+		margin-left: 0;
+		margin-top: 1%;
+		position: absolute;
+	}
+}
+
+.hidden {
+	display: none;
+}
 
