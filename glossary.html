@@ -4,6 +4,8 @@
 	<link rel="stylesheet" type="text/css" href="glossary.css">
 	<link rel="stylesheet" type="text/css" href="nav.css">
 	<link rel="stylesheet" type="text/css" href="hover.css">
+	<link rel="stylesheet" type="text/css" href="loaders.min.css">
+	<link rel="stylesheet" type="text/css" href="loaders.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
 	<meta charset="UTF-8">
@@ -23,6 +25,7 @@
 </head>
 
 <body style="background-color:#FFFFFF">
+<div class="everything">
 
 	<div id="nav">
 		<a id="nav-icon3" href="javascript:ReverseDisplay('nav-content')" >
@@ -31,7 +34,7 @@
 			<span></span>
 			<span></span>
 		</a>
-		<div class="logo"><h1><a href="index.html" class="hvr-shrink">Socialism is...</a></h1></div>
+		<div class="logo"><a href="index.html" class="hvr-shrink"><img src="logo.png"></a></div>
 		<div id="about"><h1><a>?</a></h1></div>
 		<div id="nav-content" style="display:none">
 			<div class="nav-links" class="hidden">
@@ -108,6 +111,12 @@
 		</div>
 </div>
 
+</div>
+	<div id="loading">
+		<div class="loading-thing">
+			<div data-loader="ball-rotate"></div>
+		</div>
+	</div>
 	</body>
 
 	<script type="text/javascript" language="JavaScript"><!--
@@ -254,6 +263,34 @@ $(document).ready(function () {
 	$('.wrapper').fadeIn(900).removeClass('hidden');
 });
 
+	function onReady(callback) {
+		var intervalID = window.setInterval(checkReady, 1000);
+
+		function checkReady() {
+			if (document.getElementsByTagName('body')[0] !== undefined) {
+				window.clearInterval(intervalID);
+				callback.call(this);
+			}
+		}
+	}
+
+	function show(id, value) {
+		document.getElementById(id).style.display = value ? 'block' : 'none';
+	}
+
+	onReady(function () {
+		show('everything', true);
+		show('loading', false);
+	});
+
+
+	$(document).ready(function () {
+		$('#everything').delay(100).fadeIn( 800 ).removeClass('hidden');
+	});
+
+	$(document).ready(function () {
+		$('#loading').delay(100).fadeOut(300).addClass('hidden');
+	});
 </script>
 
 

@@ -3,8 +3,10 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="page.css">
 	<link rel="stylesheet" type="text/css" href="myths.css">
-		<link rel="stylesheet" type="text/css" href="nav.css">
-
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" type="text/css" href="hover.css">
+	<link rel="stylesheet" type="text/css" href="loaders.min.css">
+	<link rel="stylesheet" type="text/css" href="loaders.css">
 	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="animations.css">
 
@@ -26,6 +28,7 @@
 </head>
 
 <body style="background-color:#FAF8F4">
+<div class="everything">
 
 	<div id="nav">
 		<a id="nav-icon3" href="javascript:ReverseDisplay('nav-content')" >
@@ -34,7 +37,7 @@
 			<span></span>
 			<span></span>
 		</a>
-		<div class="logo"><h1><a href="index.html" class="hvr-shrink">Socialism is...</a></h1></div>
+		<div class="logo"><a href="index.html" class="hvr-shrink"><img src="logo.png"></a></div>
 		<div id="about"><h1><a href="#">?</a></h1></div>
 		<div id="nav-content" style="display:none">
 			<div class="nav-links" class="hidden">
@@ -117,11 +120,22 @@
 				<div class="page-text">
 					<p><span class="firstLetter">G</span>gite dit, saerenim est, est, ame eosanda dolupti beat volore volor maio. Sedit ipis <span class="tooltip" style="border-bottom: solid 2px #0082c9;">Socialism</span> am eat occus inctori buscia dollam iur, eatem qui ad erchic tem quas aut officienti voluptatur? Quiatus aepedit verem velit estisqui berum nam, sit velessit, voloratium fuga. Itate ipsame si blabore perupta temquam, serum num evelis et endant as et ut eum nem apiducia porerit molor sam quaturem vidignihilit aut aut et ent apit ex eles molupid essustis discitat.</p>
 					<p>Tur? Quia ducil et que si velest eaturitis consed quo magnimus asitat quo to tem ium digendant quissitio. Tem. Obit facerior magnam aciam fugia con pa volorer ibusapicitio enecumet et qui verat pl que si velest eaturitis consed quo magnimus asitat quo to tem ium digendant quissitio. Tem. Obit facerior magnam aciam fugia con pa volorer ibusapicitio enecumet et qui verat pl.</p>
+
+						<div class="next-button">
+				<a href="ds.html">
+					<div class="next-image"><img src="button_ds.png"></div>
+					<div class="inner-text"><h4 class="button">Next: Democratic Socialism</h4></div>
+				</a>
+			</div>
 				</div>
 			</div>
 		</div>
-
-
+</div>
+	<div id="loading">
+		<div class="loading-thing">
+			<div data-loader="ball-rotate"></div>
+		</div>
+	</div>
 
 	</body>
 
@@ -258,6 +272,59 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$('.landing').fadeIn(700).removeClass('hidden');
 });
+
+$(document).ready(function() {
+
+		/* Every time the window is scrolled ... */
+		$(window).scroll( function(){
+
+			/* Check the location of each desired element */
+			$('.next-button').each( function(i){
+
+				var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+				/* If the object is completely visible in the window, fade it it */
+				if( bottom_of_window > bottom_of_object ){
+
+					$(this).animate({'opacity':'1'},500);
+
+				}
+
+			}); 
+
+		});
+
+	});
+
+	function onReady(callback) {
+		var intervalID = window.setInterval(checkReady, 1000);
+
+		function checkReady() {
+			if (document.getElementsByTagName('body')[0] !== undefined) {
+				window.clearInterval(intervalID);
+				callback.call(this);
+			}
+		}
+	}
+
+	function show(id, value) {
+		document.getElementById(id).style.display = value ? 'block' : 'none';
+	}
+
+	onReady(function () {
+		show('everything', true);
+		show('loading', false);
+	});
+
+
+	$(document).ready(function () {
+		$('#everything').delay(100).fadeIn( 800 ).removeClass('hidden');
+	});
+
+	$(document).ready(function () {
+		$('#loading').delay(100).fadeOut(300).addClass('hidden');
+	});
 </script>
 
 

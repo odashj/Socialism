@@ -301,11 +301,13 @@ h1 a:hover {
 	}
 }
 
-a {
-
-}
-
 hr {
 	position: relative;
 }
+
+a{
+	text-decoration: none;
+}
+
+
 

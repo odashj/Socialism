@@ -935,71 +935,7 @@ span#underline {
 		}
 	}
 
-	@media (max-width: 500px) {
-		.next {
-			position: relative;
-			width: 45vw;
-			height: auto;
-			background: #0082c9;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 1vw;
-			top: 8vw;
-			display: block;
-		}
-	}
-
-	@media (min-width: 501px) {
-		.next {
-			position: relative;
-			width: 35vw;
-			height: auto;
-			background: #0082c9;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 1vw;
-			top: 8vw;
-			display: block;
-		}
-	}
-
-	@media (min-width: 1001px) {
-		.next {
-			position: relative;
-			width: 20vw;
-			height: auto;
-			background: #0082c9;
-			margin-left: auto;
-			margin-right: auto;
-			padding: 1vw;
-			top: 8vw;
-			display: block;
-		}
-	}
-
-	.next:hover {
-		background-color: #ffd400;
-		transition: all 150ms ease-in-out;
-		text-decoration: none;
-	} 
-
-	h4.next-button {
-		text-align: center;
-		position: relative;
-		bottom: 0;
-		text-decoration-color: transparent;
-		text-decoration: none;
-		color: #000;
-	}
-
-	h4.next-button a {
-		text-align: center;
-		position: relative;
-		bottom: 0;
-		text-decoration-color: transparent;
-		text-decoration: none;
-		color: #000;
-	}
+	
 	a.def{
 		color: #ffd400;
 		text-decoration: underline;
@@ -1008,10 +944,3 @@ span#underline {
 	span.tooltip:hover{
 		cursor: help;
 	}
-
-
-
-
-
-
-

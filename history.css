@@ -1,91 +1,81 @@
-.hand {
+.landing-arrow {
 	position: absolute;
 	bottom: 0;
-	top: -1vw;
+	left: 0;
+	z-index: 2;
 }
 
-.hand img {
-	max-width: 45vw;
+.landing-arrow img {
+	max-width: 97vw;
 }
 
-.ballot1 {
+.clock1{
 	position: absolute;
-	top: 30vw;
-	left: 40vw;
-	-ms-transform: rotate(5deg); /* IE 9 */
-	-webkit-transform: rotate(5deg); /* Safari */
-	transform: rotate(5deg);
-}
-
-.ballot1 img {
-	max-width: 20vw;
-}
-
-.ballot2 {
-	position: absolute;
-	top: 24vw;
-	left: 5vw;
-	-ms-transform: rotate(20deg); /* IE 9 */
-	-webkit-transform: rotate(20deg); /* Safari */
-	transform: rotate(20deg);
 	z-index: 1;
+	margin-left: 31vw;
+	margin-top: 34vw;
 }
 
-.ballot2 img {
+.clock1 img{
+	max-width: 17vw;
+
+}
+
+.clock2{
+	position: absolute;
+	z-index: 1;
+	margin-left: 15vw;
+	margin-top: 10vw;
+}
+
+.clock2 img{
+	max-width: 22vw;
+
+}
+
+.clock3{
+	position: absolute;
+	z-index: 1;
+	margin-left: 37vw;
+	margin-top: 0vw;
+}
+
+.clock3 img{
+	width:20vw;
+}
+
+.clock4{
+	position: absolute;
+	position: absolute;
+	z-index: 1;
+	margin-left: 53vw;
+	margin-top: 25vw;
+}
+
+.clock4 img{
 	max-width: 20vw;
 }
 
-.ballot3 {
+.clock5{
 	position: absolute;
-	top: 4vw;
-	left: 56vw;
-	-ms-transform: rotate(15deg); /* IE 9 */
-	-webkit-transform: rotate(15deg); /* Safari */
-	transform: rotate(15deg);
+	z-index: 3;
+	margin-left: 61vw;
+	margin-top: 9vw;
 }
 
-.ballot3 img {
-	max-width: 20vw;
+.clock5 img{
+	max-width: 17vw;
 }
 
-.ballot4 {
+.clock6{
 	position: absolute;
-	top: 15vw;
-	left: 70vw;
-	-ms-transform: rotate(-10deg); /* IE 9 */
-	-webkit-transform: rotate(-10deg); /* Safari */
-	transform: rotate(-10deg);
-}
-
-.ballot4 img {
-	max-width: 20vw;
-}
-
-.ballot5 {
-	position: absolute;
-	top: 36vw;
-	left: 66vw;
-	-ms-transform: rotate(25deg); /* IE 9 */
-	-webkit-transform: rotate(25deg); /* Safari */
-	transform: rotate(25deg);
-}
-
-.ballot5 img {
-	max-width: 20vw;
-}
-
-.ballot6 {
-	position: absolute;
-	top: 35vw;
-	left: 10vw;
-	-ms-transform: rotate(-25deg); /* IE 9 */
-	-webkit-transform: rotate(-25deg); /* Safari */
-	transform: rotate(-25deg);
 	z-index: 0;
+	margin-left: 52vw;
+	margin-top: 12vw;
 }
 
-.ballot6 img {
-	max-width: 20vw;
+.clock6 img{
+	max-width: 24vw;
 }
 
 @media (max-width: 700px) {
