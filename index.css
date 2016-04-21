@@ -1,8 +1,6 @@
 
 /*Landing Page*/
 
-
-
 @media (max-width: 500px) {
 	h3.home-title{
 		font-size: 34px;
@@ -177,7 +175,6 @@ span#underline {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-
 }
 
 .eagle1{
@@ -541,7 +538,6 @@ span#underline {
 		width: 100%;
 		height: 100%;
 		position: absolute;
-
 	}
 
 	.crowd1 img{
@@ -574,8 +570,8 @@ span#underline {
 
 		from {
 			opacity: 0;
-			-webkit-transform: translate3d(0, 3000px, 0);
-			transform: translate3d(0, 3000px, 0);
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
 		}
 
 		60% {
@@ -608,8 +604,8 @@ span#underline {
 
 		from {
 			opacity: 0;
-			-webkit-transform: translate3d(0, 3000px, 0);
-			transform: translate3d(0, 3000px, 0);
+			-webkit-transform: translate3d(0, 100vh, 0);
+			transform: translate3d(0, 100vh, 0);
 		}
 
 		60% {
@@ -845,13 +841,13 @@ span#underline {
 
 	@media (min-width: 1001px) {
 		.home-text{
-			width: 55%;
+			width: 60%;
 			margin-left: 20%;
 			margin-right: 20%;
 			margin-top: 19vw;
 			position: absolute;
 			height: auto;
-			margin-bottom: 20vw;
+			margin-bottom: 0;
 		}
 	}
 

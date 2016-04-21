@@ -398,25 +398,72 @@ span.tooltip:hover{
 }
 
 
-.inner-text {
-	position: absolute;
-	top: 6.5vw;
-	left: 0;
-	right: 1vw;
-	width: 28vw;
-	height: 5vw;
-	margin-left: auto;
-	margin-right: auto;
+
+
+@media (min-width: 1600px) {
+	.next-image {
+		position: absolute;
+		left: 1vw;
+		top: 1vw;
+		width: 26vw;
+		height: 16vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.next-button {
+		position: relative;
+		width: 28vw;
+		height: 28vw;
+		margin-left: auto;
+		margin-right: auto;
+		top: 8vw;
+		opacity: 0;
+	}
+
+	.inner-text {
+		position: absolute;
+		top: 6.5vw;
+		left: 0;
+		right: 1vw;
+		width: 28vw;
+		height: 5vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-.next-image {
-	position: absolute;
-	left: 1vw;
-	top: 1vw;
-	width: 26vw;
-	height: 16vw;
-	margin-left: auto;
-	margin-right: auto;
+@media (max-width: 1599px) {
+	.next-image {
+		position: absolute;
+		left: 1vw;
+		top: 1vw;
+		width: 28vw;
+		height: 18vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.next-button {
+		position: relative;
+		width: 30vw;
+		height: 30vw;
+		margin-left: auto;
+		margin-right: auto;
+		top: 8vw;
+		opacity: 0;
+	}
+
+	.inner-text {
+		position: absolute;
+		top: 7.6vw;
+		left: 0;
+		right: 1vw;
+		width: 30vw;
+		height: 7vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 
@@ -425,15 +472,7 @@ span.tooltip:hover{
 	height: 100%;
 }
 
-.next-button {
-	position: relative;
-	width: 28vw;
-	height: 28vw;
-	margin-left: auto;
-	margin-right: auto;
-	top: 8vw;
-	opacity: 0;
-}
+
 
 
 h4.button {
