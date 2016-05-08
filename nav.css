@@ -75,7 +75,7 @@
 		height: auto;
 		position: relative;
 		left: -7.2em;
-		top: calc(50vh - 25px);
+		top: calc(50vh);
 		z-index: 10000;
 	}
 
@@ -84,7 +84,10 @@
 		width: 220px;
 	}*/
 }
-
+.logo img {
+	width: 170px;
+	height: auto;
+}
 @media (min-width: 1251px) {
 	#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
 		width: 28px;
@@ -289,52 +292,54 @@
 @media (min-width: 1600px) {
 	#nav-content {
 		position: relative;
-		left: 50%;
-		top: 45%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		height: 70%;
+		width: 100%;
+		top: 10%;
+		height: auto;
 		text-align: center;
-		display: none;	
+		display: none;		
 	}
 }
 
 @media (min-width: 1251px) and (max-width: 1599px) {
 	#nav-content {
 		position: relative;
-		left: 50%;
-		top: 35%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		height: 70%;
+		width: 100%;
+		top: 0;
+		height: auto;
 		text-align: center;
-		display: none;	
+		display: none;		
 	}
 }
 
 @media (min-width: 1000px) and (max-width: 1251px) {
 	#nav-content {
 		position: relative;
-		left: 50%;
-		top: 52%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		height: 70%;
+		width: 100%;
+		height: auto;
 		text-align: center;
 		display: none;	
 	}
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 501px) and (max-width: 999px)  {
 	#nav-content {
 		position: relative;
-		left: 50%;
-		top: 58%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		height: 70%;
+		width: 100%;
+		height: auto;
+		margin-top: 20%;
 		text-align: center;
-		display: none;	
+		display: none;		
+	}
+}
+
+@media (max-width: 500px) {
+	#nav-content {
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-top: 20%;
+		text-align: center;
+		display: none;		
 	}
 }
 
@@ -383,33 +388,43 @@ h3.nav-item a:hover{
 	border-bottom: solid #0082c9 .1em;
 	transition: border-color 150ms ease-in;
 }
+
+.about-text {
+	padding:10%;
+}
 @media (min-width: 501px) {
 	#about-content {
+		overflow-y: scroll; 
 		position: fixed;
-		width: 66%;
-		margin-left: 11%;
-		top: 8%;
-		padding: 6%;
-		height: auto;
+		width: 100%;
+		height: 100%;
 		background: #ffd400;
+		z-index: 10000;
 		display: none;
-		overflow-y: scroll;
 	}
 }
 
 @media (max-width: 500px) {
 	#about-content {
 		position: fixed;
-		width: 75%;
-		margin-left: 6%;
-		top: 11%;
-		padding: 6%;
-		height: auto;
+		width: 100%;
+		height: 100%;
 		background: #ffd400;
 		display: none;
-		overflow-y: scroll;
 	}
 }
+
+	.about-close{
+		position: fixed;
+		top: 38px;
+		left: 16px;
+		cursor: pointer;
+	}
+
+	.about-close img{
+		height: auto;
+		width: 28px;
+	}
 
 #everything {
 display: none;

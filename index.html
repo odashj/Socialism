@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="page.css">
 	<link rel="stylesheet" type="text/css" href="loaders.min.css">
 	<link rel="stylesheet" type="text/css" href="loaders.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="css/hover.css" rel="stylesheet" media="all">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
@@ -27,6 +28,7 @@
 		<!--[if lt IE 9]>
    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
    <![endif]-->
+ <link rel="icon" href="si_favicon.png">
 
    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
@@ -53,9 +55,6 @@
 					<h3 class="nav-item"><a href="ds.html">Democratic Socialism</a></h3>
 					<h3 class="nav-item"><a href="glossary.html">Glossary</a></h3>
 				</div>
-			</div>
-			<div id="about-content" style="display:none">
-				<p class="home">Socialism is a bad word in America. Politicians use the term ‘socialist’ as an insult because it represents something foreign, scary, and un-American. What most people don’t realize is that America is, in fact, already Socialist. Many things that make this country what it is—Social Security, Public Schools, Highways—are all, by definition, Socialist entities. The goal of Socialism is… is to shift the the way we think about Socialism. Socialism isn’t something to be afraid of, it’s something that we already experience and appreciate.</p>
 			</div>
 		</div>
 
@@ -109,7 +108,7 @@
 			<div class="reagan2"><img src="reagan_02.png"></div>
 			<div class="home-text">
 				<h3 class="home-title">Socialism is a bad word in America...</h3>
-				<p class="home">...but it doesn’t have to be. Socialism is not something to fear and reject; it’s something to embrace and celebrate. Through learning the history, dispelling myths and rumors, and shedding light on democratic socialism, realize that socialism is not a bad word. Socialism is… American.</p>
+				<p class="home">...but it doesn’t have to be. Socialism is not something to fear or reject; it’s something to embrace and celebrate. By learning its history, dispelling myths and rumors, and shedding light on Democratic Socialism, realize that Socialism is not a bad word. </p><p class="home">Socialism is… American.</p>
 
 				<div class="next-button">
 					<a href="history.html">
@@ -126,7 +125,14 @@
 			<div data-loader="ball-rotate"></div>
 		</div>
 	</div>
-
+<div id="about-content">
+		<div class="about-close">
+			<img src="about-close.png">
+		</div>
+		<div class="about-text">
+			<p class="home">Socialism is a bad word in America. Politicians use the term ‘socialist’ as an insult because it represents something foreign, scary, and un-American. What most people don’t realize is that America is, in fact, already Socialist. Many things that make this country what it is—Social Security, Public Schools, Highways—are all, by definition, Socialist entities. The goal of Socialism is… is to shift the the way we think about Socialism. Socialism isn’t something to be afraid of, it’s something that we already experience and appreciate.</p>
+		</div>
+	</div>
 </body>
 
 <script type="text/javascript" language="JavaScript"><!--
@@ -155,32 +161,12 @@ $(function(){
 
 });
 
-$(function(){
-	$('#about').click(function(){
-		$(this).closest('#nav').addClass('clicked');
-	});
-
-});
-
-
 
 $(document).ready(function() {
 	$('#nav-icon3').on('click', function() {
 		$('.nav-links').fadeToggle(700);
 	});
 });
-$(document).ready(function() {
-	$('#about').on('click', function() {
-		$('.nav-links').fadeIn(700);
-	});
-});
-
-$(document).ready(function() {
-	$('#about').on('click', function() {
-		$('#about-content').fadeToggle(700);
-	});
-});
-
 
 
 $(document).ready(function(){
@@ -188,15 +174,6 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 });
-
-$('#about').click( function() {
-	$("#nav-icon3").addClass("open");
-} );
-
-$('#nav-icon3').click( function() {
-	$("#about-content").fadeOut(700);
-} );
-
 
 // Type and backspace
 
@@ -307,7 +284,7 @@ $(window).scroll(function() {
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
 
 				/* If the object is completely visible in the window, fade it it */
-				if( bottom_of_window > bottom_of_object ){
+				if( bottom_of_window > bottom_of_object - 100 ){
 
 					$(this).animate({'opacity':'1'},500);
 
@@ -346,6 +323,18 @@ $(window).scroll(function() {
 
 	$(document).ready(function () {
 		$('#loading').delay(100).fadeOut(300).addClass('hidden');
+	});
+		// about
+	$(document).ready(function() {
+		$('#about').on('click', function() {
+			$('#about-content').fadeIn(500);
+		});
+	});
+
+	$(document).ready(function() {
+		$('.about-close').on('click', function() {
+			$('#about-content').fadeOut(500);
+		});
 	});
 </script>
 

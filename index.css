@@ -19,6 +19,35 @@
 	}
 }
 
+@media (max-width: 500px) {
+	p.home {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 31px;
+	}
+}
+
+@media (min-width: 501px) {
+	p.home {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 31px;
+		line-height: 48px;
+	}
+}
+@media (min-width: 1601px) {
+	p.home {
+		font-family: "source-serif-pro",sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 43px;
+		line-height: 66px;
+	}
+}
+
 .landing-bg {
 	width: 100%;
 	height: 100%;
@@ -185,16 +214,6 @@ span#underline {
 	position: absolute;
 }
 
-.eagle1 img{
-	max-width: 37vw;
-	height: auto;
-}
-
-.eagle2 img{
-	max-width: 37vw;
-	height: auto;
-}
-
 .eagle3{
 	position: absolute;
 	top: 43%;
@@ -206,15 +225,6 @@ span#underline {
 
 }
 
-.eagle3 img{
-	max-width: 37vw;
-	height: auto;
-}
-
-.eagle4 img{
-	max-width: 37vw;
-	height: auto;
-}
 
 /*Vote stickers*/
 
@@ -401,25 +411,7 @@ span#underline {
 		top:5%;
 	}
 
-	.vote1 img{
-		max-width: 15vw;
-		height: auto;
-	}
-
-	.vote2 img{
-		max-width: 15vw;
-		height: auto;
-	}
-
-	.vote3 img{
-		max-width: 15vw;
-		height: auto;
-	}
-
-	.vote4 img{
-		max-width: 15vw;
-		height: auto;
-	}
+	
 
 	/*Crowd animation*/
 
@@ -540,25 +532,7 @@ span#underline {
 		position: absolute;
 	}
 
-	.crowd1 img{
-		width: 100vw;
-		height: auto;
-	}
-
-	.crowd2 img{
-		width: 100vw;
-		height: auto;
-	}
-
-	.crowd3 img{
-		width: 100vw;
-		height: auto;
-	}
-
-	.crowd4 img{
-		width: 100vw;
-		height: auto;
-	}
+	
 
 	/*	Fists animation*/
 
@@ -771,41 +745,6 @@ span#underline {
 		left: 80%;
 	}
 
-	.fist1 img{
-		width: 20vw;
-		height: auto;
-	}
-
-	.fist2 img{
-		width: 20vw;
-		height: auto;
-	}
-
-	.fist3 img{
-		width: 20vw;
-		height: auto;
-	}
-
-	.fist4 img{
-		width: 20vw;
-		height: auto;
-	}
-
-	.fist5 img{
-		width: 20vw;
-		height: auto;
-	}
-
-	.fist6 img{
-		width: 22vw;
-		height: auto;
-	}
-
-	.fist7 img{
-		width: 20vw;
-		height: auto;
-	}
-
 	.home-content {
 		width: 100%;
 		position: fixed;
@@ -914,21 +853,12 @@ span#underline {
 			left: 3vw;
 		}
 
-		.reagan1 img{
-			width: 37vw;
-			height: auto;
-		}
-
 		.reagan2{
 			position: absolute;
 			top: 1vh;
 			left: 3vw;
 		}
 
-		.reagan2 img{
-			width: 37vw;
-			height: auto;
-		}
 	}
 
 	
@@ -939,4 +869,331 @@ span#underline {
 
 	span.tooltip:hover{
 		cursor: help;
+	}
+
+	@media (min-width: 1200px) {
+		.eagle1 img{
+			max-width: 37vw;
+			height: auto;
+		}
+
+		.eagle2 img{
+			max-width: 37vw;
+			height: auto;
+		}
+
+		.eagle3 img{
+			max-width: 37vw;
+			height: auto;
+		}
+
+		.eagle4 img{
+			max-width: 37vw;
+			height: auto;
+		}
+
+		.vote1 img{
+			max-width: 15vw;
+			height: auto;
+		}
+
+		.vote2 img{
+			max-width: 15vw;
+			height: auto;
+		}
+
+		.vote3 img{
+			max-width: 15vw;
+			height: auto;
+		}
+
+		.vote4 img{
+			max-width: 15vw;
+			height: auto;
+		}
+
+		.crowd1 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd2 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd3 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd4 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.reagan1 img{
+			width: 37vw;
+			height: auto;
+		}
+
+
+		.reagan2 img{
+			width: 37vw;
+			height: auto;
+		}
+
+		.fist1 img{
+			width: 20vw;
+			height: auto;
+		}
+
+		.fist2 img{
+			width: 20vw;
+			height: auto;
+		}
+
+		.fist3 img{
+			width: 20vw;
+			height: auto;
+		}
+
+		.fist4 img{
+			width: 20vw;
+			height: auto;
+		}
+
+		.fist5 img{
+			width: 20vw;
+			height: auto;
+		}
+
+		.fist6 img{
+			width: 22vw;
+			height: auto;
+		}
+
+		.fist7 img{
+			width: 20vw;
+			height: auto;
+		}
+
+	}
+
+@media (max-width: 1199px) and (min-width: 801px) {
+		.eagle1 img{
+			max-width: 42vw;
+			height: auto;
+		}
+
+		.eagle2 img{
+			max-width: 42vw;
+			height: auto;
+		}
+
+		.eagle3 img{
+			max-width: 42vw;
+			height: auto;
+		}
+
+		.eagle4 img{
+			max-width: 42vw;
+			height: auto;
+		}
+
+		.vote1 img{
+			max-width: 20vw;
+			height: auto;
+		}
+
+		.vote2 img{
+			max-width: 20vw;
+			height: auto;
+		}
+
+		.vote3 img{
+			max-width: 20vw;
+			height: auto;
+		}
+
+		.vote4 img{
+			max-width: 20vw;
+			height: auto;
+		}
+
+		.crowd1 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd2 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd3 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd4 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.reagan1 img{
+			width: 42vw;
+			height: auto;
+		}
+
+
+		.reagan2 img{
+			width: 42vw;
+			height: auto;
+		}
+
+		.fist1 img{
+			width: 25vw;
+			height: auto;
+		}
+
+		.fist2 img{
+			width: 25vw;
+			height: auto;
+		}
+
+		.fist3 img{
+			width: 25vw;
+			height: auto;
+		}
+
+		.fist4 img{
+			width: 25vw;
+			height: auto;
+		}
+
+		.fist5 img{
+			width: 25vw;
+			height: auto;
+		}
+
+		.fist6 img{
+			width: 27vw;
+			height: auto;
+		}
+
+		.fist7 img{
+			width: 25vw;
+			height: auto;
+		}
+
+	}
+
+	@media (max-width: 800px) {
+		.eagle1 img{
+			max-width: 52vw;
+			height: auto;
+		}
+
+		.eagle2 img{
+			max-width: 52vw;
+			height: auto;
+		}
+
+		.eagle3 img{
+			max-width: 52vw;
+			height: auto;
+		}
+
+		.eagle4 img{
+			max-width: 52vw;
+			height: auto;
+		}
+
+		.vote1 img{
+			max-width: 30vw;
+			height: auto;
+		}
+
+		.vote2 img{
+			max-width: 30vw;
+			height: auto;
+		}
+
+		.vote3 img{
+			max-width: 30vw;
+			height: auto;
+		}
+
+		.vote4 img{
+			max-width: 30vw;
+			height: auto;
+		}
+
+		.crowd1 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd2 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd3 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.crowd4 img{
+			width: 100vw;
+			height: auto;
+		}
+
+		.reagan1 img{
+			width: 52vw;
+			height: auto;
+		}
+
+
+		.reagan2 img{
+			width: 42vw;
+			height: auto;
+		}
+
+		.fist1 img{
+			width: 35vw;
+			height: auto;
+		}
+
+		.fist2 img{
+			width: 35vw;
+			height: auto;
+		}
+
+		.fist3 img{
+			width: 35vw;
+			height: auto;
+		}
+
+		.fist4 img{
+			width: 35vw;
+			height: auto;
+		}
+
+		.fist5 img{
+			width: 35vw;
+			height: auto;
+		}
+
+		.fist6 img{
+			width: 35vw;
+			height: auto;
+		}
+
+		.fist7 img{
+			width: 35vw;
+			height: auto;
+		}
+
 	}

@@ -9,15 +9,15 @@
 	max-width: 97vw;
 }
 
-.clock1{
+.ssn{
 	position: absolute;
 	z-index: 1;
 	margin-left: 31vw;
 	margin-top: 34vw;
 }
 
-.clock1 img{
-	max-width: 17vw;
+.ssn img{
+	max-width: 15vw;
 
 }
 
@@ -29,7 +29,7 @@
 }
 
 .clock2 img{
-	max-width: 22vw;
+	max-width: 15vw;
 
 }
 
@@ -41,7 +41,7 @@
 }
 
 .clock3 img{
-	width:20vw;
+	width: 15vw;
 }
 
 .clock4{
@@ -53,7 +53,7 @@
 }
 
 .clock4 img{
-	max-width: 20vw;
+	max-width: 15vw;
 }
 
 .clock5{
@@ -64,7 +64,7 @@
 }
 
 .clock5 img{
-	max-width: 17vw;
+	max-width: 15vw;
 }
 
 .clock6{
@@ -75,7 +75,7 @@
 }
 
 .clock6 img{
-	max-width: 24vw;
+	max-width: 15vw;
 }
 
 @media (max-width: 700px) {

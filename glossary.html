@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="hover.css">
 	<link rel="stylesheet" type="text/css" href="loaders.min.css">
 	<link rel="stylesheet" type="text/css" href="loaders.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 
 	<meta charset="UTF-8">
@@ -17,6 +18,7 @@
 		<!--[if lt IE 9]>
    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
    <![endif]-->
+ <link rel="icon" href="si_favicon.png">
 
    <script src="https://use.typekit.net/tvj5pke.js"></script>
    <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -44,9 +46,6 @@
 				<h3 class="nav-item"><a href="ds.html">Democratic Socialism</a></h3>
 				<h3 class="nav-item"><a href="glossary.html">Glossary</a></h3>
 			</div>
-		</div>
-		<div id="about-content" style="display:none">
-			<p class="home">Socialism is a bad word in America. Politicians use the term ‘socialist’ as an insult because it represents something foreign, scary, and un-American. What most people don’t realize is that America is, in fact, already Socialist. Many things that make this country what it is—Social Security, Public Schools, Highways—are all, by definition, Socialist entities. The goal of Socialism is… is to shift the the way we think about Socialism. Socialism isn’t something to be afraid of, it’s something that we already experience and appreciate.</p>
 		</div>
 	</div>
 	<div class="titleBoxSmall">
@@ -117,6 +116,14 @@
 			<div data-loader="ball-rotate"></div>
 		</div>
 	</div>
+	<div id="about-content">
+		<div class="about-close">
+			<img src="about-close.png">
+		</div>
+		<div class="about-text">
+			<p class="home">Socialism is a bad word in America. Politicians use the term ‘socialist’ as an insult because it represents something foreign, scary, and un-American. What most people don’t realize is that America is, in fact, already Socialist. Many things that make this country what it is—Social Security, Public Schools, Highways—are all, by definition, Socialist entities. The goal of Socialism is… is to shift the the way we think about Socialism. Socialism isn’t something to be afraid of, it’s something that we already experience and appreciate.</p>
+		</div>
+	</div>
 	</body>
 
 	<script type="text/javascript" language="JavaScript"><!--
@@ -142,48 +149,18 @@
 
 	});
 
-	$(function(){
-		$('#about').click(function(){
-			$(this).closest('#nav').addClass('clicked');
-		});
-
-	});
-
-
 
 	$(document).ready(function() {
 		$('#nav-icon3').on('click', function() {
 			$('.nav-links').fadeToggle(700);
 		});
 	});
-$(document).ready(function() {
-		$('#about').on('click', function() {
-			$('.nav-links').fadeIn(700);
-		});
-	});
-
-	$(document).ready(function() {
-		$('#about').on('click', function() {
-			$('#about-content').fadeToggle(700);
-		});
-	});
-
-		
 
 $(document).ready(function(){
 	$('#nav-icon3').click(function(){
 		$(this).toggleClass('open');
 	});
 });
-
-$('#about').click( function() {
-    $("#nav-icon3").addClass("open");
-} );
-
-$('#nav-icon3').click( function() {
-    $("#about-content").fadeOut(700);
-} );
-
 
 // Hide/Show Glossary Terms
 
@@ -290,6 +267,19 @@ $(document).ready(function () {
 
 	$(document).ready(function () {
 		$('#loading').delay(100).fadeOut(300).addClass('hidden');
+	});
+
+		// about
+	$(document).ready(function() {
+		$('#about').on('click', function() {
+			$('#about-content').fadeIn(500);
+		});
+	});
+
+	$(document).ready(function() {
+		$('.about-close').on('click', function() {
+			$('#about-content').fadeOut(500);
+		});
 	});
 </script>
 
