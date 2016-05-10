@@ -225,7 +225,6 @@ span#underline {
 
 }
 
-
 /*Vote stickers*/
 
 @-webkit-keyframes bounceOut {
@@ -745,6 +744,7 @@ span#underline {
 		left: 80%;
 	}
 
+@media (min-width: 1051px) {
 	.home-content {
 		width: 100%;
 		position: fixed;
@@ -753,13 +753,25 @@ span#underline {
 		z-index: 1000;
 		background-color: #ffffff;
 	}
+}
+
+@media (max-width: 1050px) {
+	.home-content {
+		width: 100%;
+		position: fixed;
+		height: auto;
+		margin-top: 5vh;
+		z-index: 1000;
+		background-color: #ffffff;
+	}
+}
 
 	@media (max-width: 500px) {
 		.home-text{
 			width: 90%;
 			margin-left: 5%;
 			margin-right: 5%;
-			margin-top: 35vh;
+			margin-top: 38vh;
 			position: absolute;
 			height: auto;
 			margin-bottom: 20vw;
@@ -799,25 +811,13 @@ span#underline {
 	@media (max-width: 500px) {
 		.reagan1{
 			position: absolute;
-			top: 13vh;
-			margin-left: 30vw;
+			top: 10vh;
+			margin-left: 24vw;
 			margin-right: auto;
 		}
 
 		.reagan1 img{
-			width: 60vw;
-			height: auto;
-		}
-
-		.reagan2{
-			position: absolute;
-			top: 13vh;
-			margin-left: 30vw;
-			margin-right: auto;
-		}
-
-		.reagan2 img{
-			width: 60vw;
+			width: 70vw;
 			height: auto;
 		}
 	}
@@ -830,18 +830,7 @@ span#underline {
 		}
 
 		.reagan1 img{
-			width: 45vw;
-			height: auto;
-		}
-
-		.reagan2{
-			position: absolute;
-			top: 7vw;
-			left: 3vw;
-		}
-
-		.reagan2 img{
-			width: 45vw;
+			width: 50vw;
 			height: auto;
 		}
 	}
@@ -853,10 +842,9 @@ span#underline {
 			left: 3vw;
 		}
 
-		.reagan2{
-			position: absolute;
-			top: 1vh;
-			left: 3vw;
+		.reagan1 img{
+			width: 100px;
+			height: auto;
 		}
 
 	}
@@ -933,13 +921,7 @@ span#underline {
 		}
 
 		.reagan1 img{
-			width: 37vw;
-			height: auto;
-		}
-
-
-		.reagan2 img{
-			width: 37vw;
+			width: 40vw;
 			height: auto;
 		}
 
@@ -980,7 +962,7 @@ span#underline {
 
 	}
 
-@media (max-width: 1199px) and (min-width: 801px) {
+	@media (max-width: 1199px) and (min-width: 801px) {
 		.eagle1 img{
 			max-width: 42vw;
 			height: auto;
@@ -1089,111 +1071,135 @@ span#underline {
 
 	}
 
+	@media (min-width: 801px) {
+		.mobileEagles {
+			display: none;
+		}
+		.mobileVotes {
+			display: none;
+		}
+		.mobileCrowd {
+			display: none;
+		}
+		.mobileFists {
+			display: none;
+		}
+	}
+
 	@media (max-width: 800px) {
-		.eagle1 img{
-			max-width: 52vw;
-			height: auto;
+
+		.eagle1 {
+			display: none;
 		}
 
-		.eagle2 img{
-			max-width: 52vw;
-			height: auto;
+		.eagle2 {
+			display: none;
 		}
 
-		.eagle3 img{
-			max-width: 52vw;
-			height: auto;
+		.eagle3 {
+			display: none;
 		}
 
-		.eagle4 img{
-			max-width: 52vw;
-			height: auto;
+		.eagle4 {
+			display: none;
 		}
 
-		.vote1 img{
-			max-width: 30vw;
-			height: auto;
+		.vote1 {
+			display: none;
 		}
 
-		.vote2 img{
-			max-width: 30vw;
-			height: auto;
+		.vote2 {
+			display: none;
 		}
 
-		.vote3 img{
-			max-width: 30vw;
-			height: auto;
+		.vote3 {
+			display: none;
 		}
 
-		.vote4 img{
-			max-width: 30vw;
-			height: auto;
+		.vote4 {
+			display: none;
 		}
 
-		.crowd1 img{
-			width: 100vw;
-			height: auto;
+		.crowd1 {
+			display: none;
 		}
 
-		.crowd2 img{
-			width: 100vw;
-			height: auto;
+		.crowd2 {
+			display: none;
 		}
 
-		.crowd3 img{
-			width: 100vw;
-			height: auto;
+		.crowd3 {
+			display: none;
 		}
 
-		.crowd4 img{
-			width: 100vw;
-			height: auto;
+		.crowd4 {
+			display: none;
 		}
 
-		.reagan1 img{
-			width: 52vw;
-			height: auto;
+		.fist1 {
+			display: none;
 		}
 
-
-		.reagan2 img{
-			width: 42vw;
-			height: auto;
+		.fist2 {
+			display: none;
 		}
 
-		.fist1 img{
-			width: 35vw;
-			height: auto;
+		.fist3 {
+			display: none;
 		}
 
-		.fist2 img{
-			width: 35vw;
-			height: auto;
+		.fist4 {
+			display: none;
 		}
 
-		.fist3 img{
-			width: 35vw;
-			height: auto;
+		.fist5 {
+			display: none;
 		}
 
-		.fist4 img{
-			width: 35vw;
-			height: auto;
+		.fist6 {
+			display: none;
 		}
 
-		.fist5 img{
-			width: 35vw;
-			height: auto;
+		.fist7 {
+			display: none;
 		}
 
-		.fist6 img{
-			width: 35vw;
-			height: auto;
+		.mobileFists{
+			position: absolute;
+			bottom: 0;
 		}
 
-		.fist7 img{
-			width: 35vw;
+		.mobileFists img {
 			height: auto;
+			width: 100%;
+		}
+		.mobileVotes{
+			position: absolute;
+			bottom: 0;
 		}
 
+		.mobileVotes img {
+			height: auto;
+			width: 100%;
+		}
+
+		.mobileCrowd{
+			position: absolute;
+			bottom: 0;
+		}
+
+		.mobileCrowd img {
+			height: auto;
+			width: 100%;
+		}
+
+		.mobileEagles{
+			position: absolute;
+			bottom: 0;
+		}
+
+		.mobileEagles img {
+			height: auto;
+			width: 100%;
+		}
 	}
