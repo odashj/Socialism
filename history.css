@@ -87,6 +87,8 @@
 		height: 50vw;
 		position: relative;
 		padding-top: 0px;
+		margin-top: 0;
+		border-top: 10px solid #FAF8F4;
 	}
 
 
@@ -98,6 +100,8 @@
 		height: 50vw;
 		position: relative;
 		padding-top: 0px;
+		margin-top: 0;
+		border-top: 10px solid #FAF8F4;
 	}
 	.pageBanner3{
 		background-image: url("history_03.png");
@@ -107,6 +111,8 @@
 		height: 50vw;
 		position: relative;
 		padding-top: 0px;
+		margin-top: 0;
+		border-top: 10px solid #FAF8F4;
 	}
 }
 

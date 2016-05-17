@@ -1,9 +1,22 @@
-h3.quote {
-	text-align: center;
-	font-size: 3.6vw;
-	line-height: 4vw;
-	padding-bottom: 1vw;
-	text-transform: initial;
+
+@media (max-width: 500px) {
+	h3.quote {
+		text-align: center;
+		font-size: 6.5vw;
+		line-height: 7.5vw;
+		padding-bottom: 1vw;
+		text-transform: initial;
+	}
+}
+
+@media (min-width: 501px) {
+	h3.quote {
+		text-align: center;
+		font-size: 3.6vw;
+		line-height: 4vw;
+		padding-bottom: 1vw;
+		text-transform: initial;
+	}
 }
 
 @media (min-width: 1251px) {
@@ -197,9 +210,13 @@ h2.myths {
 		-moz-box-shadow: -1px -1px 25px -2px rgba(255,255,255,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(255,255,255,0.25);
 	}
+
+	.arrow img {
+		max-width: 7vw;
+	}
 }
 
-@media (max-width: 1250px) {
+@media (min-width: 701px) {
 	.arrow {
 		margin-left: 46.5vw;
 		margin-right: 46.5vw;
@@ -211,13 +228,33 @@ h2.myths {
 		-moz-box-shadow: -1px -1px 25px -2px rgba(255,255,255,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(255,255,255,0.25);
 	}
+
+	.arrow img {
+		max-width: 7vw;
+	}
+}
+
+@media (max-width: 700px) {
+	.arrow {
+		margin-left: 46.5vw;
+		margin-right: 46.5vw;
+		margin-right: auto;
+		position: absolute;
+		bottom: 10vw;
+		max-width: 15vw;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(255,255,255,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(255,255,255,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(255,255,255,0.25);
+	}
+
+	.arrow img {
+		max-width: 15vw;
+	}
 }
 
 
 
-.arrow img {
-	max-width: 7vw;
-}
+
 
 span.highlight {
 	background-color: #ffd400;
@@ -441,29 +478,30 @@ span.tooltip:hover{
 
 @media (max-width: 700px) {
 	h2.bannerPage {
-		font-size: 6vw;
+		font-size: 7.5vw;
 		font-family: "europa",sans-serif;
 		font-style: normal;
 		font-weight: 700;
 		letter-spacing: .05vw;
-		line-height: 8vw;
+		line-height: 8.5vw;
 		color: #fff;
 		text-align: center;
 		margin-bottom: 0;
 		margin-top: .5em;
-		padding-left: 10vw;
-		padding-right: 10vw;
+		padding-left: 8vw;
+		padding-right: 8vw;
 		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 	}
 	h4.bannerPage {
 		text-align: center;
 		text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-		line-height: 1px;
+		line-height: 2px;
 		color: #fff;
-		font-size: 3vw;
-		letter-spacing: .4vw;
+		font-size: 4vw;
+		letter-spacing: .5vw;
 		margin-bottom: 0px;
-		margin-top: 15vw;
+		margin-top: 12vw;
+		text-transform: capitalize;
 		font-weight: 500;
 		font-family: "source-serif-pro", serif;
 	}
@@ -664,16 +702,16 @@ span.tooltip:hover{
 		position: absolute;
 		left: 1vw;
 		top: 1vw;
-		width: 57vw;
-		height: 47vw;
+		width: 72vw;
+		height: 62vw;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.next-button {
 		position: relative;
-		width: 59vw;
-		height: 59vw;
+		width: 70vw;
+		height: 70vw;
 		margin-left: auto;
 		margin-right: auto;
 		top: 8vw;
@@ -682,11 +720,11 @@ span.tooltip:hover{
 
 	.inner-text {
 		position: absolute;
-		top: 13vw;
+		top: 17vw;
 		left: 0;
 		right: 1vw;
-		width: 57vw;
-		height: 37vw;
+		width: 74vw;
+		height: 53vw;
 		margin-left: auto;
 		margin-right: auto;
 	}
