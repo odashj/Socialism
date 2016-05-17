@@ -185,11 +185,24 @@ h2.myths {
 	}
 }
 
-@media (max-width: 1250px) {
+@media (min-width: 501px) {
 	.pageTitle {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: calc(40vh - 20px);
+		height: 5vw;
+		width: 100vw;
+		z-index: 10;
+		position: relative;
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.pageTitle {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: calc(40vh - 60px);
 		height: 5vw;
 		width: 100vw;
 		z-index: 10;
@@ -242,10 +255,6 @@ h2.myths {
 		max-width: 15vw;
 	}
 }
-
-
-
-
 
 span.highlight {
 	background-color: #ffd400;
