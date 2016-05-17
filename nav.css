@@ -315,6 +315,7 @@
 		#nav-content {
 			position: relative;
 			width: 100%;
+			margin-top: 30vh;
 			height: auto;
 			text-align: center;
 			display: none;	
@@ -326,7 +327,7 @@
 			position: relative;
 			width: 100%;
 			height: auto;
-			margin-top: 20%;
+			margin-top: 30vh;
 			text-align: center;
 			display: none;		
 		}
@@ -337,7 +338,7 @@
 			position: relative;
 			width: 100%;
 			height: auto;
-			margin-top: 20%;
+			margin-top: 30vh;
 			text-align: center;
 			display: none;		
 		}
