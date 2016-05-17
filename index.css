@@ -1,4 +1,7 @@
 
+body {
+	overflow-x:hidden;
+}
 /*Landing Page*/
 @media (max-width: 500px) {
 	#container {
