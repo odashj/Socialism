@@ -202,7 +202,7 @@ h2.myths {
 	.pageTitle {
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: calc(40vh - 60px);
+		margin-top: calc(40vh - 40px);
 		height: 5vw;
 		width: 100vw;
 		z-index: 10;
