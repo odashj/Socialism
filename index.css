@@ -758,7 +758,7 @@ span#underline {
 
 	@media (max-width: 1050px) {
 		.home-content {
-			width: 100%;
+			max-width: 100%;
 			position: fixed;
 			height: auto;
 			margin-top: 5vh;
@@ -1197,7 +1197,6 @@ span#underline {
 		.mobileEagles{
 			position: absolute;
 			bottom: 0;
-			display: none;
 		}
 
 		.mobileEagles img {
