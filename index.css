@@ -1,5 +1,18 @@
 
 /*Landing Page*/
+@media (min-width: 501px) {
+	body{
+		max-width: 100%;
+		overflow: auto;
+	}
+}
+
+@media (max-width: 500px) {
+body{
+		max-width: 100%;
+		overflow: hidden;
+	}
+}
 
 @media (max-width: 500px) {
 	h3.home-title{
