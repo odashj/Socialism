@@ -290,7 +290,7 @@ span.highlight {
 		bottom: 0;
 		background-color: #ffd400;
 		height: 50px;
-		width: 225px;
+		width: 100vw;
 		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
