@@ -758,13 +758,12 @@ span#underline {
 
 	@media (max-width: 1050px) {
 		.home-content {
-			max-width: 100%;
+			width: 100%;
 			position: fixed;
 			height: auto;
 			margin-top: 5vh;
 			z-index: 1000;
 			background-color: #ffffff;
-			display: none;
 		}
 	}
 
