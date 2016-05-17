@@ -1,12 +1,12 @@
 
 body {
-	overflow-x:hidden;
-	max-width: 100%;
+
 }
 /*Landing Page*/
 @media (max-width: 500px) {
 	#container {
 		overflow-x:hidden;
+		width: 100%;
 	}
 		#main {
 			top:0;
