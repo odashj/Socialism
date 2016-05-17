@@ -764,7 +764,7 @@ span#underline {
 			margin-top: 5vh;
 			z-index: 1000;
 			background-color: #ffffff;
-			overflow-x: hidden;
+			display: none;
 		}
 	}
 
