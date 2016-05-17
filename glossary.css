@@ -2,116 +2,6 @@
 /*Dictionary page
 */
 
-h1 {
-	font-size: 28px;
-	font-family: "europa",sans-serif;
-	font-style: normal;
-	font-weight: 700;
-	letter-spacing: 1px;
-	line-height: 65px;
-	color: #000;
-}
-
-h1 a {
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 150ms ease-in-out;
-	color: #000;
-}
-
-h1 a:hover {
-	color: #000;
-}
-
-@media (max-width: 500px) {
-	h2 {
-		font-size: 25px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: .5px;
-		line-height: 35px;
-		color: #000;
-	}
-}
-
-@media (min-width: 501px) {
-	h2 {
-		font-size: 35px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: .5px;
-		line-height: 50px;
-		color: #000;
-	}
-}
-
-@media (min-width: 851px) {
-	h2 {
-		font-size: 40px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: .5px;
-		line-height: 55px;
-		color: #000;
-	}
-}
-
-@media (min-width: 1001px) {
-	h2 {
-		font-size: 50px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: .5px;
-		line-height: 65px;
-		color: #000;
-	}
-}
-
-@media (min-width: 1851px) {
-	h2 {
-		font-size: 80px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: .5px;
-		line-height: 95px;
-		color: #000;
-	}
-}
-
-@media (max-width: 1600px) {
-	h3 {
-		font-size: 24px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: 1px;
-	}
-}
-
-@media (min-width: 1601px) {
-	h3 {
-		font-size: 28px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: 1px;
-	}
-}
-@media (min-width: 1601px) {
-	h3 {
-		font-size: 28px;
-		font-family: "europa",sans-serif;
-		font-style: normal;
-		font-weight: 700;
-		letter-spacing: 1px;
-	}
-}
-
 @media (max-width: 500px) {
 	a.glossary-link {
 		display: none;
@@ -236,7 +126,6 @@ h1 a:hover {
 			width: 83%;
 			margin-right: 7%;
 			margin-left: 7%;
-			top: 100px;
 		}
 
 		/* Dropdown button on hover & focus */
@@ -354,13 +243,13 @@ h1 a:hover {
 
 @media (max-height: 600px){
 	.d-column2 {
-		margin-top: 100px;
+		margin-top: 170px;
 	}
 }
 
 @media (min-height: 601px){
 	.d-column2 {
-		margin-top: 120px;
+		margin-top: 200px;
 	}
 }
 
@@ -986,7 +875,7 @@ h1.mythsTitleSmall {
 		height: auto;
 		display: none;
 		margin-left: 0;
-		margin-top: 0;
+		margin-top: 1%;
 		position: absolute;
 	}
 }
