@@ -38,7 +38,7 @@
 
 <body style="background-color:#ffffff">
 	<div id="everything">
-		<!-- <div id="nav">
+		<div id="nav">
 			<a id="nav-icon3" href="javascript:ReverseDisplay('nav-content')" >
 				<span></span>
 				<span></span>
@@ -56,9 +56,9 @@
 					<h3 class="nav-item"><a href="glossary.html">Glossary</a></h3>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
-		<div class="landing-bg">
+		<!-- <div class="landing-bg">
 			<h2 class="index">Socialism is...
 				<div id="typed-strings">
 					<p><span id="underline">Freedom</span></p>
@@ -113,8 +113,8 @@
 		</div>
 
 
-
-		<!-- <div class="home-content">
+ -->
+		<div class="home-content">
 			<div class="reagan1"><img src="reagan_01.png"></div>
 			<div class="home-text">
 				<h3 class="home-title">Socialism is a bad word in America...</h3>
@@ -140,7 +140,7 @@
 					<p class="home">Socialism is a bad word in America. Politicians use the term ‘Socialist’ as an insult because it represents something foreign, scary, and un-American. What most people don’t realize is that America is, in fact, already Socialist. Many things that make this country what it is—Social Security, Public Schools, Highways—are all, by definition, Socialist entities. The goal of Socialism is… is to shift the the way we think about Socialism. Socialism isn’t something to be afraid of, it’s something that we already experience and appreciate.</p>
 				</div>
 			</div>
-		</div> -->
+		</div>
 	</div>
 </body>
 
@@ -293,29 +293,29 @@ $(window).scroll(function() {
 
 
 <script type="text/javascript">
-	var windw = this;
-	var winHeight = window.innerHeight - 5;
+	// var windw = this;
+	// var winHeight = window.innerHeight - 5;
 
-	$.fn.followTo = function ( pos ) {
-		var $this = this,
-		$window = $(windw);
+	// $.fn.followTo = function ( pos ) {
+	// 	var $this = this,
+	// 	$window = $(windw);
 		
-		$window.scroll(function(e){
-			if ($window.scrollTop() > pos) {
-				$this.css({
-					position: 'absolute',
-					top: pos
-				});
-			} else {
-				$this.css({
-					position: 'fixed',
-					top: 0
-				});
-			}
-		});
-	};
+	// 	$window.scroll(function(e){
+	// 		if ($window.scrollTop() > pos) {
+	// 			$this.css({
+	// 				position: 'absolute',
+	// 				top: pos
+	// 			});
+	// 		} else {
+	// 			$this.css({
+	// 				position: 'fixed',
+	// 				top: 0
+	// 			});
+	// 		}
+	// 	});
+	// };
 
-	$('.home-content').followTo(winHeight);
+	// $('.home-content').followTo(winHeight);
 
 	$(document).ready(function() {
 
