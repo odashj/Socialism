@@ -761,16 +761,39 @@ span#underline {
 			z-index: 1000;
 			background-color: #ffffff;
 		}
+
+		.home-content-mobile {
+			display: none;
+		}
 	}
 
-	@media (max-width: 1050px) {
+	@media (min-width: 501px) {
 		.home-content {
 			width: 100%;
-			position: fixed;
+			position: absolute;
 			height: auto;
 			margin-top: 5vh;
 			z-index: 1000;
 			background-color: #ffffff;
+		}
+
+		.home-content-mobile {
+			display: none;
+		}
+	}
+
+		@media (max-width: 500px) {
+		.home-content-mobile {
+			width: 100%;
+			position: absolute;
+			height: auto;
+			margin-top: 5vh;
+			z-index: 1000;
+			background-color: #ffffff;
+		}
+
+		.home-content {
+			display: none;
 		}
 	}
 
