@@ -58,7 +58,7 @@
 			</div>
 		</div>
 
-		<!-- <div class="landing-bg">
+		<div class="landing-bg">
 			<h2 class="index">Socialism is...
 				<div id="typed-strings">
 					<p><span id="underline">Freedom</span></p>
@@ -74,7 +74,7 @@
 				<div class="eagle3 animated slideInLeftEagle3"><img src="eagles_02.png"></div>
 				<div class="eagle4 animated slideInLeftEagle4"><img src="eagles_03.png"></div>
 			</div>
-			<div class="mobileEagles animated slideInLeftEagle1">
+			<div class="mobileEagles animated slideInLeftEagle1" style="display:none">
 				<img src="homepage_mobile_eagles.png" class="animated slideOutRight">
 			</div>
 			<div class="fullVotes animated bounceOut">
@@ -83,7 +83,7 @@
 				<div class="vote3 animated bounceIn3"><img src="vote_02.png"></div>
 				<div class="vote4 animated bounceIn4"><img src="vote_04.png"></div>
 			</div>
-			<div class="mobileVotes animated bounceOut">
+			<div class="mobileVotes animated bounceOut" style="display:none">
 				<img src="homepage_mobile_votes.png" class="animated bounceIn1">
 			</div>
 			<div class="fullCrowd animated slideOutDown">
@@ -92,7 +92,7 @@
 				<div class="crowd3 animated slideInUp2"><img src="crowd_03.png"></div>
 				<div class="crowd4 animated slideInUp3"><img src="crowd_01.png"></div>
 			</div>
-			<div class="mobileCrowd animated slideOutDown">
+			<div class="mobileCrowd animated slideOutDown" style="display:none">
 				<img src="homepage_mobile_crowd.png" class="animated slideInUp1">
 			</div>
 			<div class="allFists">
@@ -104,7 +104,7 @@
 				<div class="fist6 animated bounceInUp6"><img src="fist_06.png"></div>
 				<div class="fist7 animated bounceInUp7"><img src="fist_07.png"></div>
 			</div>
-			<div class="mobileFists">
+			<div class="mobileFists" style="display:none">
 				<img src="homepage_mobile_fists.png" class="animated bounceInUp1">
 			</div>
 			<div class="more">
@@ -113,7 +113,7 @@
 		</div>
 
 
- -->
+
 		<div class="home-content">
 			<div class="reagan1"><img src="reagan_01.png"></div>
 			<div class="home-text">
@@ -293,29 +293,29 @@ $(window).scroll(function() {
 
 
 <script type="text/javascript">
-	// var windw = this;
-	// var winHeight = window.innerHeight - 5;
+	var windw = this;
+	var winHeight = window.innerHeight - 5;
 
-	// $.fn.followTo = function ( pos ) {
-	// 	var $this = this,
-	// 	$window = $(windw);
+	$.fn.followTo = function ( pos ) {
+		var $this = this,
+		$window = $(windw);
 		
-	// 	$window.scroll(function(e){
-	// 		if ($window.scrollTop() > pos) {
-	// 			$this.css({
-	// 				position: 'absolute',
-	// 				top: pos
-	// 			});
-	// 		} else {
-	// 			$this.css({
-	// 				position: 'fixed',
-	// 				top: 0
-	// 			});
-	// 		}
-	// 	});
-	// };
+		$window.scroll(function(e){
+			if ($window.scrollTop() > pos) {
+				$this.css({
+					position: 'absolute',
+					top: pos
+				});
+			} else {
+				$this.css({
+					position: 'fixed',
+					top: 0
+				});
+			}
+		});
+	};
 
-	// $('.home-content').followTo(winHeight);
+	$('.home-content').followTo(winHeight);
 
 	$(document).ready(function() {
 

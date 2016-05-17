@@ -758,7 +758,7 @@ span#underline {
 	@media (max-width: 1050px) {
 		.home-content {
 			width: 100%;
-			position: absolute;
+			position: fixed;
 			height: auto;
 			margin-top: 5vh;
 			z-index: 1000;
