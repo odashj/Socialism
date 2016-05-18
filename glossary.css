@@ -822,7 +822,7 @@
 }
 
 @media (min-width: 501px) {
-	.titleBoxSmall {
+	.titleBoxSmallMyths {
 		position: fixed;
 		bottom: 0;
 		background-color: #ffd400;
@@ -835,7 +835,7 @@
 	}
 }
 @media (min-width: 1251px) {
-	.titleBoxSmall {
+	.titleBoxSmallMyths {
 		position: fixed;
 		top: 0;
 		background-color: #ffd400;
