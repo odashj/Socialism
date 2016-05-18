@@ -1,4 +1,7 @@
-
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
 
 @media (max-width: 500px) {
 	h3.home-title{
