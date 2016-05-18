@@ -270,18 +270,36 @@ span.highlight {
 
 
 @media (max-width: 500px) {
-	.titleBoxSmallGloss {
+	.titleBoxSmall {
+		position: fixed;
+		bottom: 0;
+		background-color: #ffd400;
+		height: 50px;
+		width: 100vw;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		display: none;
+		z-index: 2000;
 	}
 }
 
 @media (min-width: 501px) {
-	.titleBoxSmallGloss {
+	.titleBoxSmall {
+		position: fixed;
+		bottom: 0;
+		background-color: #ffd400;
+		height: 50px;
+		width: 100vw;
+		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
+		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		display: none;
+		z-index: 2000;
 	}
 }
 @media (min-width: 1251px) {
-	.titleBoxSmallGloss {
+	.titleBoxSmall {
 		position: fixed;
 		top: 0;
 		background-color: #ffd400;
@@ -290,7 +308,7 @@ span.highlight {
 		-webkit-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		-moz-box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
 		box-shadow: -1px -1px 25px -2px rgba(0,0,0,0.25);
-		display: block;
+		display: none;
 		z-index: 2000;
 	}
 }
