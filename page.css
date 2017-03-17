@@ -24,7 +24,7 @@
 		height: 100vh;
 		width: calc(100% - 60px);
 		background-color: #FAF8F4;
-		background-image: url('ds_landing.png');
+		background-image: url('images/ds_landing.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -39,7 +39,7 @@
 		top: 60px;
 		width: 100%;
 		background-color: #FAF8F4;
-		background-image: url('ds_landing.png');
+		background-image: url('images/ds_landing.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: fixed;
@@ -55,7 +55,7 @@
 		top: 60px;
 		width: 100%;
 		background-color: #FAF8F4;
-		background-image: url('ds_landing_mobile.png');
+		background-image: url('images/ds_landing_mobile.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: fixed;
@@ -70,7 +70,7 @@
 		height: 100vh;
 		width: calc(100% - 60px);
 		background-color: #FAF8F4;
-		background-image: url('history_landing.png');
+		background-image: url('images/history_landing.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -85,7 +85,7 @@
 		top: 60px;
 		width: 100%;
 		background-color: #FAF8F4;
-		background-image: url('history_landing.png');
+		background-image: url('images/history_landing.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: fixed;
@@ -101,7 +101,7 @@
 		top: 60px;
 		width: 100%;
 		background-color: #FAF8F4;
-		background-image: url('history_landing_mobile.png');
+		background-image: url('images/history_landing_mobile.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: fixed;
@@ -116,7 +116,7 @@
 		height: 100vh;
 		width: calc(100% - 60px);
 		background-color: #FAF8F4;
-		background-image: url('myths_landing.png');
+		background-image: url('images/myths_landing.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -131,7 +131,7 @@
 		top: 60px;
 		width: 100%;
 		background-color: #FAF8F4;
-		background-image: url('myths_landing.png');
+		background-image: url('images/myths_landing.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: fixed;
@@ -147,7 +147,7 @@
 		top: 60px;
 		width: 100%;
 		background-color: #FAF8F4;
-		background-image: url('myths_landing_mobile.png');
+		background-image: url('images/myths_landing_mobile.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: fixed;
@@ -159,7 +159,7 @@
 
 
 .hidden {
-	display: none;	
+	display: none;
 }
 
 h2.myths {
@@ -762,6 +762,3 @@ span.tooltip:hover{
 		font-size: 3vw;
 	}
 }
-
-
-
